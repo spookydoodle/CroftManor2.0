@@ -87,10 +87,12 @@ ModelImporter:
     2100010: EyebBallBlue
     2100012: LeatherBlack
     2100014: Steel
+    2100016: CeramicBlue
     4300000: Body
-    7400000: idle
+    7400000: Idle
     7400002: Armature|IdleOld
-    7400004: walk
+    7400004: Walk
+    7400006: Armature|WalkBack
     9500000: //RootNode
     13700000: Body
     2186277476908879412: ImportLogs
@@ -123,10 +125,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: idle
+      name: Idle
       takeName: Armature|Idle
       firstFrame: 0
-      lastFrame: 79
+      lastFrame: 78
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -151,10 +153,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: walk
+      name: Walk
       takeName: Armature|Walk
       firstFrame: 0
-      lastFrame: 41
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
