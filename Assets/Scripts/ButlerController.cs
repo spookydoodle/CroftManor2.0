@@ -31,31 +31,39 @@ public class ButlerController : MonoBehaviour
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+        float f = Input.GetAxisRaw("Fire1");
 
-        Move(v, h);
+        Move(v, h, f);
         Animating(v, h);
 
     }
 
-    void Move(float v, float h)
+    void Move(float v, float h, float f)
     {
-        if(h != 0f && v != 0f)
+        if (h != 0f && f != 0f)
         {
-            MoveForward(v, h);
-            Turn(h);
+            MoveSides(h);
         }
-        else if (h == 0f && v != 0f)
+        else if (v != 0)
         {
-            MoveForward(v, h);
-        }
+            MoveForward(v);
 
-        else if(h != 0f && v == 0f)
+            if (h != 0f && v > 0f)
+            {                
+                Turn(h);
+            }
+            else if (h != 0f && v < 0f)
+            {
+                Turn(-h);
+            }
+        }
+        else if (h != 0f)
         {
-            MoveSides(v, h);
+            Turn(h);
         }
     }
 
-    void MoveForward(float v, float h)
+    void MoveForward(float v)
     {
 
         //movement.Set(v, 0f, -h);
@@ -65,7 +73,7 @@ public class ButlerController : MonoBehaviour
                 
     }
 
-    void MoveSides(float v, float h)
+    void MoveSides(float h)
     {
 
         //movement.Set(v, 0f, -h);
