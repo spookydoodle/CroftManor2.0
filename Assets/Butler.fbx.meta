@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 39c3a43a5fdd4d040aff169f3c9449c5
+guid: 034b6028506b4424f877fa43daff7fdd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -89,9 +89,9 @@ ModelImporter:
     2100014: Steel
     2100016: CeramicBlue
     4300000: Body
-    7400000: Idle
+    7400000: idle
     7400002: Armature|IdleOld
-    7400004: Walk
+    7400004: walk
     7400006: Armature|WalkBack
     9500000: //RootNode
     13700000: Body
@@ -125,7 +125,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: idle
       takeName: Armature|Idle
       firstFrame: 0
       lastFrame: 78
@@ -153,7 +153,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Walk
+      name: walk
       takeName: Armature|Walk
       firstFrame: 0
       lastFrame: 40

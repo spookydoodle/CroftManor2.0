@@ -27,7 +27,7 @@ public class CameraFollow : MonoBehaviour {
         float angle = target.transform.eulerAngles.y;
         Quaternion rotation = Quaternion.Euler(0, angle, 0);
         transform.position = target.transform.position - (rotation * offset);
-        transform.rotation = target.transform.rotation * Quaternion.Euler(5, 90, 0);
+        transform.rotation = target.transform.rotation * Quaternion.Euler(5, 0, 0);
         //transform.position = target.transform.position - offset;
         //transform.LookAt(target.transform);
     }

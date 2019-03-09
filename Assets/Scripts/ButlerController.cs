@@ -7,60 +7,59 @@ public class ButlerController : MonoBehaviour
 
     public float speed = 1.0f;
     public float rotationSpeed = 75.0f;
+    public float jumpForce = 50.0f;
     public float camRayLength = 100f;
     public Animator anim;
-    public Rigidbody butlerRigidbody;
+    public LayerMask Ground;
 
-    Vector3 movement;
-    int floorMask;
+    public float maxStepHeight = 0.4f;        // The maximum a player can set upwards in units when they hit a wall that's potentially a step
+    public float stepSearchOvershoot = 0.01f; // How much to overshoot into the direction a potential step in units when testing. High values prevent player from walking up tiny steps but may cause problems.
 
-
+    public Rigidbody _body;
+    private bool _isGrounded = true;
 
     // Use this for initialization
     void Awake()
     {
-        floorMask = LayerMask.GetMask("Floor");
-
-        Rigidbody butlerRigidbody = gameObject.GetComponent<Rigidbody>();
+        Ground = LayerMask.GetMask("Floor");
+        Rigidbody _body = gameObject.GetComponent<Rigidbody>();
         Animator anim = gameObject.GetComponent<Animator>();
-        
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         float f = Input.GetAxisRaw("Fire1");
+        float j = Input.GetAxisRaw("Jump");
 
         Move(v, h, f);
+        Jump();
         Animating(v, h);
 
     }
 
     void Move(float v, float h, float f)
     {
+        if (h != 0f && v < 0f)
+        {
+            h = -h;
+        }
+
         if (h != 0f && f != 0f)
         {
             MoveSides(h);
         }
-        else if (v != 0)
-        {
-            MoveForward(v);
-
-            if (h != 0f && v > 0f)
-            {                
-                Turn(h);
-            }
-            else if (h != 0f && v < 0f)
-            {
-                Turn(-h);
-            }
-        }
-        else if (h != 0f)
+        else
         {
             Turn(h);
         }
+
+        MoveForward(v);
+
     }
 
     void MoveForward(float v)
@@ -69,7 +68,7 @@ public class ButlerController : MonoBehaviour
         //movement.Set(v, 0f, -h);
         //movement = movement.normalized * speed * Time.deltaTime;
         //butlerRigidbody.MovePosition(transform.position + movement)
-        transform.Translate(speed * v * Time.deltaTime, 0, 0); ;
+        transform.Translate(0, 0, speed * v * Time.deltaTime); ;
                 
     }
 
@@ -79,7 +78,7 @@ public class ButlerController : MonoBehaviour
         //movement.Set(v, 0f, -h);
         //movement = movement.normalized * speed * Time.deltaTime;
         //butlerRigidbody.MovePosition(transform.position + movement)
-        transform.Translate(0, 0, -speed * h * Time.deltaTime); ;
+        transform.Translate(speed * h * Time.deltaTime, 0, 0); ;
 
     }
 
@@ -98,6 +97,15 @@ public class ButlerController : MonoBehaviour
 
         transform.Rotate(0, rotationSpeed * h * Time.deltaTime, 0);
     }
+
+    void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _body.AddForce(Vector3.up * Mathf.Sqrt(jumpForce * -2f * Physics.gravity.y), ForceMode.VelocityChange);
+        }
+    }
+
 
     void Animating (float v, float h)
     {
