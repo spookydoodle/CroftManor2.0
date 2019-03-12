@@ -46,8 +46,6 @@ public class PlayerCharacterController : MonoBehaviour {
         bool j = Input.GetButtonDown("Jump");
 
 
-        Debug.Log(_controller.isGrounded);
-
         // Fall downwards
         Fall();
 

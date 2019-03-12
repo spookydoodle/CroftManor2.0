@@ -1,17 +1,25 @@
 fileFormatVersion: 2
-guid: e7ef30d0546a44a43adf1224ffbd6ce2
+guid: 6479ea8c4ece7734581ce192c24fbb1e
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Armature
+    100002: Bone
+    100004: Bone_end
+    100006: //RootNode
+    100008: Door_0.1x2x2
+    400000: Armature
+    400002: Bone
+    400004: Bone_end
+    400006: //RootNode
+    400008: Door_0.1x2x2
     2100000: Door1
-    2300000: //RootNode
-    3300000: //RootNode
     4300000: Door_0.1x2x2
-    7400000: DoorClose
-    7400002: DoorOpen
+    7400000: Door1_1_Open
+    7400002: Door1_2_Close
     9500000: //RootNode
+    13700000: Door_0.1x2x2
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -41,8 +49,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: DoorClose
-      takeName: Door_0.1x2x2|DoorClose
+      name: Door1_1_Open
+      takeName: Armature|Door1_1_Open
       firstFrame: 0
       lastFrame: 40
       wrapMode: 0
@@ -69,8 +77,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: DoorOpen
-      takeName: Door_0.1x2x2|DoorOpen
+      name: Door1_2_Close
+      takeName: Armature|Door1_2_Close
       firstFrame: 0
       lastFrame: 40
       wrapMode: 0
@@ -120,7 +128,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
