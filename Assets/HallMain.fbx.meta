@@ -54,18 +54,17 @@ ModelImporter:
     100096: HallWallF1Right_1
     100098: HallWallF1Right_2
     100100: HallWallF1WindowEntrance
-    100102: HallWallF2Back_1
-    100104: HallWallF2Back_2
-    100106: HallWallF2Front
-    100108: HallWallF2Front.001
-    100110: HallWallF2Left_1
-    100112: HallWallF2Right_2
-    100114: HallWallF3RoofFrontLeft
-    100116: HallWallF3RoofFrontRight
-    100118: HallWallF3RooftopBack
-    100120: HallWindowEntrance
-    100122: HallWindowLeft
-    100124: HallWindowRight
+    100102: HallWallF2Back_2
+    100104: HallWallF2Front
+    100106: HallWallF2Front.001
+    100108: HallWallF2Left_1
+    100110: HallWallF2Right_2
+    100112: HallWallF3RoofFrontLeft
+    100114: HallWallF3RoofFrontRight
+    100116: HallWallF3RooftopBack
+    100118: HallWindowEntrance
+    100120: HallWindowLeft
+    100122: HallWindowRight
     400000: HallFloorF1Back
     400002: HallFloorF1Left
     400004: HallFloorF1Right
@@ -117,18 +116,17 @@ ModelImporter:
     400096: HallWallF1Right_1
     400098: HallWallF1Right_2
     400100: HallWallF1WindowEntrance
-    400102: HallWallF2Back_1
-    400104: HallWallF2Back_2
-    400106: HallWallF2Front
-    400108: HallWallF2Front.001
-    400110: HallWallF2Left_1
-    400112: HallWallF2Right_2
-    400114: HallWallF3RoofFrontLeft
-    400116: HallWallF3RoofFrontRight
-    400118: HallWallF3RooftopBack
-    400120: HallWindowEntrance
-    400122: HallWindowLeft
-    400124: HallWindowRight
+    400102: HallWallF2Back_2
+    400104: HallWallF2Front
+    400106: HallWallF2Front.001
+    400108: HallWallF2Left_1
+    400110: HallWallF2Right_2
+    400112: HallWallF3RoofFrontLeft
+    400114: HallWallF3RoofFrontRight
+    400116: HallWallF3RooftopBack
+    400118: HallWindowEntrance
+    400120: HallWindowLeft
+    400122: HallWindowRight
     2100000: WindowGolden
     2100002: WallWhiteWood2
     2100004: Wall
@@ -189,18 +187,17 @@ ModelImporter:
     2300094: HallWallF1Right_1
     2300096: HallWallF1Right_2
     2300098: HallWallF1WindowEntrance
-    2300100: HallWallF2Back_1
-    2300102: HallWallF2Back_2
-    2300104: HallWallF2Front
-    2300106: HallWallF2Front.001
-    2300108: HallWallF2Left_1
-    2300110: HallWallF2Right_2
-    2300112: HallWallF3RoofFrontLeft
-    2300114: HallWallF3RoofFrontRight
-    2300116: HallWallF3RooftopBack
-    2300118: HallWindowEntrance
-    2300120: HallWindowLeft
-    2300122: HallWindowRight
+    2300100: HallWallF2Back_2
+    2300102: HallWallF2Front
+    2300104: HallWallF2Front.001
+    2300106: HallWallF2Left_1
+    2300108: HallWallF2Right_2
+    2300110: HallWallF3RoofFrontLeft
+    2300112: HallWallF3RoofFrontRight
+    2300114: HallWallF3RooftopBack
+    2300116: HallWindowEntrance
+    2300118: HallWindowLeft
+    2300120: HallWindowRight
     3300000: HallFloorF1Back
     3300002: HallFloorF1Left
     3300004: HallFloorF1Right
@@ -251,18 +248,17 @@ ModelImporter:
     3300094: HallWallF1Right_1
     3300096: HallWallF1Right_2
     3300098: HallWallF1WindowEntrance
-    3300100: HallWallF2Back_1
-    3300102: HallWallF2Back_2
-    3300104: HallWallF2Front
-    3300106: HallWallF2Front.001
-    3300108: HallWallF2Left_1
-    3300110: HallWallF2Right_2
-    3300112: HallWallF3RoofFrontLeft
-    3300114: HallWallF3RoofFrontRight
-    3300116: HallWallF3RooftopBack
-    3300118: HallWindowEntrance
-    3300120: HallWindowLeft
-    3300122: HallWindowRight
+    3300100: HallWallF2Back_2
+    3300102: HallWallF2Front
+    3300104: HallWallF2Front.001
+    3300106: HallWallF2Left_1
+    3300108: HallWallF2Right_2
+    3300110: HallWallF3RoofFrontLeft
+    3300112: HallWallF3RoofFrontRight
+    3300114: HallWallF3RooftopBack
+    3300116: HallWindowEntrance
+    3300118: HallWindowLeft
+    3300120: HallWindowRight
     4300000: HallWindowRight
     4300002: HallWindowEntrance
     4300004: HallRoofRight
@@ -279,47 +275,46 @@ ModelImporter:
     4300026: HallWallF3RooftopBack
     4300028: HallWallF2Right_2
     4300030: HallWallF2Back_2
-    4300032: HallWallF2Back_1
-    4300034: HallWallF2Left_1
-    4300036: HallWallF1Front
-    4300038: HallWallF1Front.001
-    4300040: HallWallB0Right.001
-    4300042: HallWallB0TunnelRight
-    4300044: HallWallB0TunnelRightWDoors
-    4300046: HallWallB0BreakLeft
-    4300048: HallWallB0WindowLeft
-    4300050: HallWallB1Left
-    4300052: HallWallB0TunnelLeft
-    4300054: HallWallEntrance
-    4300056: HallWallB1Back
-    4300058: HallWallB0Right.002
-    4300060: HallWallB0Right
-    4300062: HallWallB0Left
-    4300064: HallWallB1Right
-    4300066: HallWallB0BreakRight
-    4300068: HallWallF1Back_1
-    4300070: HallWallF1Back_2
-    4300072: HallWallF1Left_1
-    4300074: HallWallF1Right_2
-    4300076: HallFloorF1Left
-    4300078: HallFloorF1Right
-    4300080: HallFloorF1Back
-    4300082: HallFloorTiles
-    4300084: HallRailingPostBackRight
-    4300086: HallStairsRailBack.001
-    4300088: HallRailRight.003
-    4300090: HallRailRight.002
-    4300092: HallRailRight.001
-    4300094: HallRailRight
-    4300096: HallStairsRailBack
-    4300098: HallStairsRailRight
-    4300100: HallStairsRailLeft
-    4300102: HallStairsRailBackRight
-    4300104: HallStairsRailBackLeft
-    4300106: HallStairsB0Right
-    4300108: HallStairsB0Left
-    4300110: HallStairsB1Left
-    4300112: HallStairsB1Right
+    4300032: HallWallF2Left_1
+    4300034: HallWallF1Front
+    4300036: HallWallF1Front.001
+    4300038: HallWallB0Right.001
+    4300040: HallWallB0TunnelRight
+    4300042: HallWallB0TunnelRightWDoors
+    4300044: HallWallB0BreakLeft
+    4300046: HallWallB0WindowLeft
+    4300048: HallWallB1Left
+    4300050: HallWallB0TunnelLeft
+    4300052: HallWallEntrance
+    4300054: HallWallB1Back
+    4300056: HallWallB0Right.002
+    4300058: HallWallB0Right
+    4300060: HallWallB0Left
+    4300062: HallWallB1Right
+    4300064: HallWallB0BreakRight
+    4300066: HallWallF1Back_1
+    4300068: HallWallF1Back_2
+    4300070: HallWallF1Left_1
+    4300072: HallWallF1Right_2
+    4300074: HallFloorF1Left
+    4300076: HallFloorF1Right
+    4300078: HallFloorF1Back
+    4300080: HallFloorTiles
+    4300082: HallRailingPostBackRight
+    4300084: HallStairsRailBack.001
+    4300086: HallRailRight.003
+    4300088: HallRailRight.002
+    4300090: HallRailRight.001
+    4300092: HallRailRight
+    4300094: HallStairsRailBack
+    4300096: HallStairsRailRight
+    4300098: HallStairsRailLeft
+    4300100: HallStairsRailBackRight
+    4300102: HallStairsRailBackLeft
+    4300104: HallStairsB0Right
+    4300106: HallStairsB0Left
+    4300108: HallStairsB1Left
+    4300110: HallStairsB1Right
     6400000: HallFloorF1Back
     6400002: HallFloorF1Left
     6400004: HallFloorF1Right
@@ -370,18 +365,17 @@ ModelImporter:
     6400094: HallWallF1Right_1
     6400096: HallWallF1Right_2
     6400098: HallWallF1WindowEntrance
-    6400100: HallWallF2Back_1
-    6400102: HallWallF2Back_2
-    6400104: HallWallF2Front
-    6400106: HallWallF2Front.001
-    6400108: HallWallF2Left_1
-    6400110: HallWallF2Right_2
-    6400112: HallWallF3RoofFrontLeft
-    6400114: HallWallF3RoofFrontRight
-    6400116: HallWallF3RooftopBack
-    6400118: HallWindowEntrance
-    6400120: HallWindowLeft
-    6400122: HallWindowRight
+    6400100: HallWallF2Back_2
+    6400102: HallWallF2Front
+    6400104: HallWallF2Front.001
+    6400106: HallWallF2Left_1
+    6400108: HallWallF2Right_2
+    6400110: HallWallF3RoofFrontLeft
+    6400112: HallWallF3RoofFrontRight
+    6400114: HallWallF3RooftopBack
+    6400116: HallWindowEntrance
+    6400118: HallWindowLeft
+    6400120: HallWindowRight
   externalObjects: {}
   materials:
     importMaterials: 1
