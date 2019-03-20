@@ -25,6 +25,10 @@ ModelImporter:
     100038: ConcertRoomWallWindow.003
     100040: ConcertRoomWallWindow.004
     100042: ConcertRoomWallWindow.005
+    100044: ConcertRoomWallB0Left.001
+    100046: ConcertRoomWallB0Right.001
+    100048: ConcertRoomWallDoor
+    100050: HallWallB0TunnelRight
     400000: Ceiling
     400002: //RootNode
     400004: ConcertRoomFloorTiles
@@ -47,12 +51,17 @@ ModelImporter:
     400038: ConcertRoomWallWindow.003
     400040: ConcertRoomWallWindow.004
     400042: ConcertRoomWallWindow.005
+    400044: ConcertRoomWallB0Left.001
+    400046: ConcertRoomWallB0Right.001
+    400048: ConcertRoomWallDoor
+    400050: HallWallB0TunnelRight
     2100000: WhiteWall
     2100002: WindowGolden
     2100004: Wall
     2100006: WallWhiteWood2
     2100008: WallWhiteWood
     2100010: TileBlackWhite
+    2100012: WallWhite
     2300000: Ceiling
     2300002: ConcertRoomFloorTiles
     2300004: ConcertRoomWallB0Back
@@ -74,6 +83,10 @@ ModelImporter:
     2300036: ConcertRoomWallWindow.003
     2300038: ConcertRoomWallWindow.004
     2300040: ConcertRoomWallWindow.005
+    2300042: ConcertRoomWallB0Left.001
+    2300044: ConcertRoomWallB0Right.001
+    2300046: ConcertRoomWallDoor
+    2300048: HallWallB0TunnelRight
     3300000: Ceiling
     3300002: ConcertRoomFloorTiles
     3300004: ConcertRoomWallB0Back
@@ -95,6 +108,10 @@ ModelImporter:
     3300036: ConcertRoomWallWindow.003
     3300038: ConcertRoomWallWindow.004
     3300040: ConcertRoomWallWindow.005
+    3300042: ConcertRoomWallB0Left.001
+    3300044: ConcertRoomWallB0Right.001
+    3300046: ConcertRoomWallDoor
+    3300048: HallWallB0TunnelRight
     4300000: Ceiling
     4300002: ConcertRoomWallWindow.005
     4300004: ConcertRoomWallWindow.004
@@ -115,6 +132,10 @@ ModelImporter:
     4300034: ConcertRoomWallB2Front
     4300036: ConcertRoomWallB0Front
     4300038: ConcertRoomFloorTiles
+    4300040: ConcertRoomWallDoor
+    4300042: ConcertRoomWallB0Right.001
+    4300044: ConcertRoomWallB0Left.001
+    4300046: HallWallB0TunnelRight
     6400000: Ceiling
     6400002: ConcertRoomFloorTiles
     6400004: ConcertRoomWallB0Back
@@ -136,6 +157,10 @@ ModelImporter:
     6400036: ConcertRoomWallWindow.003
     6400038: ConcertRoomWallWindow.004
     6400040: ConcertRoomWallWindow.005
+    6400042: ConcertRoomWallB0Left.001
+    6400044: ConcertRoomWallB0Right.001
+    6400046: ConcertRoomWallDoor
+    6400048: HallWallB0TunnelRight
   externalObjects: {}
   materials:
     importMaterials: 1
