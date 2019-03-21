@@ -7,8 +7,8 @@ public class PlayerCharacterController : MonoBehaviour {
     public float speed = 1.5f;
     public float rotationSpeed = 75.0f;
     public float jumpSpeed = 50.0f;
-    public float gravity = 20.0f;
-    float playerGravity;
+    public float gravity = 10.0f;
+    float ySpeed = 0;
     private bool isGrounded = false;
 
     CharacterController _controller;
@@ -20,16 +20,16 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         _controller = gameObject.GetComponent<CharacterController>();
         Animator anim = gameObject.GetComponent<Animator>();
-        playerGravity = -gravity;
-
     }
 
 
     // Detect collision with floor
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.transform.tag == "Floor")
+        if (collision.gameObject.transform.tag == "Floor") {
             isGrounded = true;
+            ySpeed = 0;
+        }
     }
     //void OnCollisionExit(Collision collision)
     //{
@@ -45,6 +45,11 @@ public class PlayerCharacterController : MonoBehaviour {
         float f = Input.GetAxisRaw("Fire1");
         bool j = Input.GetButtonDown("Jump");
 
+        // Jump if key is pressed
+        if (j)
+        {
+            Jump(j, jumpSpeed);
+        }
 
         // Fall downwards
         Fall();
@@ -68,12 +73,6 @@ public class PlayerCharacterController : MonoBehaviour {
             Rotate(h);
         }
 
-        // Jump if key is pressed
-        if (j)
-        {
-            Jump(j, jumpSpeed);
-        }
-
         // Check if player is grounded AFTER movement
         setGravity();
         
@@ -86,10 +85,9 @@ public class PlayerCharacterController : MonoBehaviour {
 
     void setGravity()
     {
-        if (_controller.isGrounded)
-            playerGravity = 0;
-        else
-            playerGravity = -gravity;
+        if (_controller.isGrounded) {
+            ySpeed = 0;
+        }
     }
 
 
@@ -128,16 +126,14 @@ public class PlayerCharacterController : MonoBehaviour {
 
     void Jump(bool j, float jumpSpeed)
     {
-        moveDirection = new Vector3(0.0f, jumpSpeed, 0.0f);
-        moveDirection = transform.TransformDirection(moveDirection);
-
-        _controller.Move(moveDirection * Time.deltaTime);
+        ySpeed = jumpSpeed;
     }
 
 
     void Fall()
     {
-        moveDirection = new Vector3(0, playerGravity, 0);
+        ySpeed -= gravity;
+        moveDirection = new Vector3(0, ySpeed, 0);
         _controller.Move(moveDirection * Time.deltaTime);
     }
 
