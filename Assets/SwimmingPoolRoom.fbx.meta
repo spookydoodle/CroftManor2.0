@@ -31,6 +31,32 @@ ModelImporter:
     100050: SwimmingPoolRoomWallRightBt
     100052: SwimmingPoolRoomWallRightBt.001
     100054: SwimmingPoolRoomWallRightBt.002
+    100056: Ceiling
+    100058: SwimmingPoolRoomWallB1Back.001
+    100060: SwimmingPoolRoomWallB1Back.002
+    100062: SwimmingPoolRoomWallB1Back.003
+    100064: SwimmingPoolRoomWallB1Back.004
+    100066: Camera
+    100068: Lamp
+    100070: Lamp.001
+    100072: PARTS
+    100074: Point
+    100076: Point.001
+    100078: Sun
+    100080: SwimmingPool_10x10x6_proxy
+    100082: SwimmingPoolCeiling_24x10x0.1_proxy
+    100084: SwimmingPoolRoomColumn_2x2x6_proxy
+    100086: SwimmingPoolRoomFloor_26x18x0.25_proxy
+    100088: SwimmingPoolRoomStairs_4x10x1_proxy
+    100090: SwimmingPoolRoomWall_0.15x2x1.5_proxy
+    100092: SwimmingPoolRoomWall_0.15x2x1_proxy
+    100094: SwimmingPoolRoomWall_0.15x2x2_proxy
+    100096: SwimmingPoolRoomWall_2x2x1_proxy
+    100098: SwimmingPoolRoomWall_2x2x4.5_proxy
+    100100: SwimmingPoolRoomWall_2x6x4.5_proxy
+    100102: SwimmingPoolRoomWallCeiling_0.15x14x1.5_proxy
+    100104: SwimmingPoolRoomWallCorner_0.15x2x2_proxy
+    100106: SwimmingPoolRoomWallEntrance_1.85x6x3.5_proxy
     400000: SwimmingPool
     400002: //RootNode
     400004: SwimmingPoolRoomColumn
@@ -59,12 +85,40 @@ ModelImporter:
     400050: SwimmingPoolRoomWallRightBt
     400052: SwimmingPoolRoomWallRightBt.001
     400054: SwimmingPoolRoomWallRightBt.002
+    400056: Ceiling
+    400058: SwimmingPoolRoomWallB1Back.001
+    400060: SwimmingPoolRoomWallB1Back.002
+    400062: SwimmingPoolRoomWallB1Back.003
+    400064: SwimmingPoolRoomWallB1Back.004
+    400066: Camera
+    400068: Lamp
+    400070: Lamp.001
+    400072: PARTS
+    400074: Point
+    400076: Point.001
+    400078: Sun
+    400080: SwimmingPool_10x10x6_proxy
+    400082: SwimmingPoolCeiling_24x10x0.1_proxy
+    400084: SwimmingPoolRoomColumn_2x2x6_proxy
+    400086: SwimmingPoolRoomFloor_26x18x0.25_proxy
+    400088: SwimmingPoolRoomStairs_4x10x1_proxy
+    400090: SwimmingPoolRoomWall_0.15x2x1.5_proxy
+    400092: SwimmingPoolRoomWall_0.15x2x1_proxy
+    400094: SwimmingPoolRoomWall_0.15x2x2_proxy
+    400096: SwimmingPoolRoomWall_2x2x1_proxy
+    400098: SwimmingPoolRoomWall_2x2x4.5_proxy
+    400100: SwimmingPoolRoomWall_2x6x4.5_proxy
+    400102: SwimmingPoolRoomWallCeiling_0.15x14x1.5_proxy
+    400104: SwimmingPoolRoomWallCorner_0.15x2x2_proxy
+    400106: SwimmingPoolRoomWallEntrance_1.85x6x3.5_proxy
+    2000000: Camera
     2100000: MosaicBoat
     2100002: PoolTilesBrown1
     2100004: PoolTilesBrown1.001
     2100006: Mosaic1_middle
     2100008: Mosaic1_corner
     2100010: Mosaic1_side
+    2100012: GlassRoof
     2300000: SwimmingPool
     2300002: SwimmingPoolRoomColumn
     2300004: SwimmingPoolRoomColumn.001
@@ -92,6 +146,25 @@ ModelImporter:
     2300048: SwimmingPoolRoomWallRightBt
     2300050: SwimmingPoolRoomWallRightBt.001
     2300052: SwimmingPoolRoomWallRightBt.002
+    2300054: Ceiling
+    2300056: SwimmingPoolRoomWallB1Back.001
+    2300058: SwimmingPoolRoomWallB1Back.002
+    2300060: SwimmingPoolRoomWallB1Back.003
+    2300062: SwimmingPoolRoomWallB1Back.004
+    2300064: SwimmingPool_10x10x6_proxy
+    2300066: SwimmingPoolCeiling_24x10x0.1_proxy
+    2300068: SwimmingPoolRoomColumn_2x2x6_proxy
+    2300070: SwimmingPoolRoomFloor_26x18x0.25_proxy
+    2300072: SwimmingPoolRoomStairs_4x10x1_proxy
+    2300074: SwimmingPoolRoomWall_0.15x2x1.5_proxy
+    2300076: SwimmingPoolRoomWall_0.15x2x1_proxy
+    2300078: SwimmingPoolRoomWall_0.15x2x2_proxy
+    2300080: SwimmingPoolRoomWall_2x2x1_proxy
+    2300082: SwimmingPoolRoomWall_2x2x4.5_proxy
+    2300084: SwimmingPoolRoomWall_2x6x4.5_proxy
+    2300086: SwimmingPoolRoomWallCeiling_0.15x14x1.5_proxy
+    2300088: SwimmingPoolRoomWallCorner_0.15x2x2_proxy
+    2300090: SwimmingPoolRoomWallEntrance_1.85x6x3.5_proxy
     3300000: SwimmingPool
     3300002: SwimmingPoolRoomColumn
     3300004: SwimmingPoolRoomColumn.001
@@ -119,6 +192,25 @@ ModelImporter:
     3300048: SwimmingPoolRoomWallRightBt
     3300050: SwimmingPoolRoomWallRightBt.001
     3300052: SwimmingPoolRoomWallRightBt.002
+    3300054: Ceiling
+    3300056: SwimmingPoolRoomWallB1Back.001
+    3300058: SwimmingPoolRoomWallB1Back.002
+    3300060: SwimmingPoolRoomWallB1Back.003
+    3300062: SwimmingPoolRoomWallB1Back.004
+    3300064: SwimmingPool_10x10x6_proxy
+    3300066: SwimmingPoolCeiling_24x10x0.1_proxy
+    3300068: SwimmingPoolRoomColumn_2x2x6_proxy
+    3300070: SwimmingPoolRoomFloor_26x18x0.25_proxy
+    3300072: SwimmingPoolRoomStairs_4x10x1_proxy
+    3300074: SwimmingPoolRoomWall_0.15x2x1.5_proxy
+    3300076: SwimmingPoolRoomWall_0.15x2x1_proxy
+    3300078: SwimmingPoolRoomWall_0.15x2x2_proxy
+    3300080: SwimmingPoolRoomWall_2x2x1_proxy
+    3300082: SwimmingPoolRoomWall_2x2x4.5_proxy
+    3300084: SwimmingPoolRoomWall_2x6x4.5_proxy
+    3300086: SwimmingPoolRoomWallCeiling_0.15x14x1.5_proxy
+    3300088: SwimmingPoolRoomWallCorner_0.15x2x2_proxy
+    3300090: SwimmingPoolRoomWallEntrance_1.85x6x3.5_proxy
     4300000: SwimmingPoolRoomColumn.001
     4300002: SwimmingPoolRoomColumn
     4300004: SwimmingPoolRoomWallRightBt.002
@@ -136,6 +228,15 @@ ModelImporter:
     4300028: SwimmingPoolRoomFloor
     4300030: SwimmingPoolRoomWallEntrance
     4300032: SwimmingPoolRoomStairs
+    4300034: Ceiling
+    4300036: SwimmingPoolRoomWallB1Back.004
+    4300038: SwimmingPoolRoomWall_0.15x2x1_proxy
+    4300040: SwimmingPoolCeiling_24x10x0.1_proxy
+    4300042: SwimmingPoolRoomWall_2x2x1_proxy
+    4300044: SwimmingPoolRoomWall_0.15x2x2_proxy
+    4300046: SwimmingPoolRoomWall_0.15x2x1.5_proxy
+    4300048: SwimmingPoolRoomWallEntrance_1.85x6x3.5_proxy
+    4300050: SwimmingPoolRoomStairs_4x10x1_proxy
     6400000: SwimmingPool
     6400002: SwimmingPoolRoomColumn
     6400004: SwimmingPoolRoomColumn.001
@@ -163,6 +264,30 @@ ModelImporter:
     6400048: SwimmingPoolRoomWallRightBt
     6400050: SwimmingPoolRoomWallRightBt.001
     6400052: SwimmingPoolRoomWallRightBt.002
+    6400054: Ceiling
+    6400056: SwimmingPoolRoomWallB1Back.001
+    6400058: SwimmingPoolRoomWallB1Back.002
+    6400060: SwimmingPoolRoomWallB1Back.003
+    6400062: SwimmingPoolRoomWallB1Back.004
+    6400064: SwimmingPool_10x10x6_proxy
+    6400066: SwimmingPoolCeiling_24x10x0.1_proxy
+    6400068: SwimmingPoolRoomColumn_2x2x6_proxy
+    6400070: SwimmingPoolRoomFloor_26x18x0.25_proxy
+    6400072: SwimmingPoolRoomStairs_4x10x1_proxy
+    6400074: SwimmingPoolRoomWall_0.15x2x1.5_proxy
+    6400076: SwimmingPoolRoomWall_0.15x2x1_proxy
+    6400078: SwimmingPoolRoomWall_0.15x2x2_proxy
+    6400080: SwimmingPoolRoomWall_2x2x1_proxy
+    6400082: SwimmingPoolRoomWall_2x2x4.5_proxy
+    6400084: SwimmingPoolRoomWall_2x6x4.5_proxy
+    6400086: SwimmingPoolRoomWallCeiling_0.15x14x1.5_proxy
+    6400088: SwimmingPoolRoomWallCorner_0.15x2x2_proxy
+    6400090: SwimmingPoolRoomWallEntrance_1.85x6x3.5_proxy
+    10800000: Lamp
+    10800002: Lamp.001
+    10800004: Point
+    10800006: Point.001
+    10800008: Sun
   externalObjects: {}
   materials:
     importMaterials: 1
