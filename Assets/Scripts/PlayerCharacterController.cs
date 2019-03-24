@@ -10,6 +10,7 @@ public class PlayerCharacterController : MonoBehaviour {
     public float gravity = 10.0f;
     float ySpeed = 0;
     private bool isGrounded = false;
+    private bool isSwimming = false;
 
     CharacterController _controller;
     public Animator anim;
@@ -38,6 +39,7 @@ public class PlayerCharacterController : MonoBehaviour {
     //}
 
 
+
     // Update is called once per frame
     void Update() {
         float h = Input.GetAxisRaw("Horizontal");
@@ -54,8 +56,11 @@ public class PlayerCharacterController : MonoBehaviour {
         // Fall downwards
         Fall();
 
+        
         // Move forwards/backwards
         MoveForward(v);
+        
+       
 
         // Reverse rotation when moving backwards
         if (h != 0f && v < 0f)

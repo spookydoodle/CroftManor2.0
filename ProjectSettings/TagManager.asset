@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Floor
   - Stairs
+  - Water
   layers:
   - Default
   - TransparentFX
