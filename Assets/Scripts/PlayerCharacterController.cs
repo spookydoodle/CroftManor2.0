@@ -30,10 +30,16 @@ public class PlayerCharacterController : MonoBehaviour {
     // Detect collision with floor
     void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == "Water") {
+            isSwimming = true;
+        }
     }
 
     void OnCollisionExit(Collision collision)
     {
+        if (collision.gameObject.tag == "Water") {
+            isSwimming = false;
+        }
     }
 
     // Update is called once per frame
@@ -93,6 +99,8 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         if (_controller.isGrounded) {
             speed.y = jumpSpeed;
+        } else if (isSwimming) {
+            speed.y += 0.5f * jumpSpeed;
         }
     }
 
@@ -100,6 +108,8 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         if (!_controller.isGrounded) {
           speed.y -= gravity;
+        } else if (isSwimming) {
+            speed.y -= 0.5f * gravity;
         }
     }
 
