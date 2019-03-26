@@ -35,6 +35,14 @@ public class PlayerCharacterController : MonoBehaviour {
         }
     }
 
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Water")
+    //    {
+    //        isSwimming = true;
+    //    }
+    //}
+
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Water") {
