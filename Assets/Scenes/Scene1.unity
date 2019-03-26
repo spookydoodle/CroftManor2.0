@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717aaedcf5e24d346b3fac0f17e6f8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  moveSpeed: 1.5
   rotationSpeed: 75
   jumpSpeed: 60
   gravity: 10
@@ -1188,6 +1188,10 @@ PrefabInstance:
     - target: {fileID: 100056, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
+      propertyPath: m_TagString
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
       propertyPath: m_Layer
