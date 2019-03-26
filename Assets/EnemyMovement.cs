@@ -5,47 +5,26 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
-    public Transform player;               // Reference to the player's position.
-    //PlayerHealth playerHealth;      // Reference to the player's health.
-    //EnemyHealth enemyHealth;        // Reference to this enemy's health.
-
+    public GameObject player;               // Reference to the player's position.
     public NavMeshAgent agent;               // Reference to the nav mesh agent.
     public Animator anim;
 
     void Start()
     {
         Animator anim = gameObject.GetComponent<Animator>();
-        //NavMeshAgent agent = GetComponent<NavMeshAgent>();
-        agent.destination = player.position;
+        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        agent.destination = player.transform.position;
     }
 
-    void Awake()
-    {
-        //Set up the references.
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        //playerHealth = player.GetComponent<PlayerHealth>();
-        //enemyHealth = GetComponent<EnemyHealth>();
-        agent = GetComponent<NavMeshAgent>();
-
-
-    }
 
 
     void Update()
     {
-        //// If the enemy and the player have health left...
-        //if (enemyHealth.currentHealth > 0 && playerHealth.currentHealth > 0)
-        //{
-        //    // ... set the destination of the nav mesh agent to the player.
-        agent.SetDestination(player.position);
+        agent.enabled = true;
+        agent.SetDestination(player.transform.position);
+        Debug.Log(agent.destination);
         Animating();
-        //}
-        //// Otherwise...
-        //else
-        //{
-        //    // ... disable the nav mesh agent.
-        //    nav.enabled = false;
-        //}
+
     }
 
     // Set parameters used in conditions of transitions in Animator component
