@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 98a1c85a51d5ba040b213d0f9507831c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm.L
+    100002: Arm.R
+    100004: Arm2.L
+    100006: Arm2.R
+    100008: Arm3.L
+    100010: Arm3.R
+    100012: Armature
+    100014: Body
+    100016: //RootNode
+    100018: Eye.L
+    100020: Eye.R
+    100022: Eye2.L
+    100024: Eye2.R
+    100026: Eye3.L
+    100028: Eye3.R
+    100030: Eye4.L
+    100032: Eye4.R
+    100034: Eye5.L
+    100036: Eye5.R
+    100038: Eye6.L
+    100040: Eye6.L_end
+    100042: Eye6.R
+    100044: Eye6.R_end
+    100046: Foot.L
+    100048: Foot.L_end
+    100050: Foot.R
+    100052: Foot.R_end
+    100054: Hand.L
+    100056: Hand.L_end
+    100058: Hand.R
+    100060: Hand.R_end
+    100062: Leg.L
+    100064: Leg.R
+    100066: Leg2.L
+    100068: Leg2.R
+    100070: Spine
+    100072: Spine_end
+    100074: SpineCenter
+    400000: Arm.L
+    400002: Arm.R
+    400004: Arm2.L
+    400006: Arm2.R
+    400008: Arm3.L
+    400010: Arm3.R
+    400012: Armature
+    400014: Body
+    400016: //RootNode
+    400018: Eye.L
+    400020: Eye.R
+    400022: Eye2.L
+    400024: Eye2.R
+    400026: Eye3.L
+    400028: Eye3.R
+    400030: Eye4.L
+    400032: Eye4.R
+    400034: Eye5.L
+    400036: Eye5.R
+    400038: Eye6.L
+    400040: Eye6.L_end
+    400042: Eye6.R
+    400044: Eye6.R_end
+    400046: Foot.L
+    400048: Foot.L_end
+    400050: Foot.R
+    400052: Foot.R_end
+    400054: Hand.L
+    400056: Hand.L_end
+    400058: Hand.R
+    400060: Hand.R_end
+    400062: Leg.L
+    400064: Leg.R
+    400066: Leg2.L
+    400068: Leg2.R
+    400070: Spine
+    400072: Spine_end
+    400074: SpineCenter
+    2100000: FurPurple
+    2100002: JeansBlack
+    2100004: RubberWhite
+    2100006: HairBrown
+    2100008: EyeBallRed
+    2100010: EyebBallBlue
+    2100012: LeatherBlack
+    2100014: Steel
+    2100016: CeramicBlue
+    4300000: Body
+    7400000: Armature|Idle
+    7400002: Armature|IdleOld
+    7400004: Armature|Walk
+    7400006: Armature|WalkBack
+    9500000: //RootNode
+    13700000: Body
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
