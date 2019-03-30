@@ -6,7 +6,6 @@ public class OpenDoor : MonoBehaviour
 {
     public GameObject player;
     public GameObject door;
-    public GameObject button;
     private Animator buttonAnim;
     private Animator doorAnim;
 
@@ -15,7 +14,7 @@ public class OpenDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        buttonAnim = button.gameObject.GetComponent<Animator>();
+        buttonAnim = gameObject.GetComponent<Animator>();
         doorAnim = door.gameObject.GetComponent<Animator>();
     }
 
@@ -23,7 +22,7 @@ public class OpenDoor : MonoBehaviour
     void Update()
     {
         bool key = Input.GetKeyDown(KeyCode.E);
-        bool isWithinRadius = checkDistance(button.transform.position, player.transform.position);
+        bool isWithinRadius = checkDistance(gameObject.transform.position, player.transform.position);
 
         //Animating(key, isWithinRadius);
         Animating(key, isWithinRadius);

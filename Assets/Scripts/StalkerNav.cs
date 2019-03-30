@@ -13,8 +13,8 @@ public class StalkerNav : MonoBehaviour
 
     void Start()
     {
-        Animator anim = gameObject.GetComponent<Animator>();
-        NavMeshAgent agent = GetComponent<NavMeshAgent>();
+        anim = gameObject.GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
         agent.destination = player.transform.position;
     }
 

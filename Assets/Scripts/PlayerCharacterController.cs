@@ -25,7 +25,7 @@ public class PlayerCharacterController : MonoBehaviour {
     void Start()
     {
         _controller = gameObject.GetComponent<CharacterController>();
-        Animator anim = gameObject.GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -75,7 +75,7 @@ public class PlayerCharacterController : MonoBehaviour {
         {
             Rotate(h);
         }
-
+        Debug.Log(h); Debug.Log(f);
         Move();
 
         // Set animations for movement
