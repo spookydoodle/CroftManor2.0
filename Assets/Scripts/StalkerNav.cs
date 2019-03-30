@@ -28,7 +28,6 @@ public class StalkerNav : MonoBehaviour
         if (agent.enabled)
         {
             agent.SetDestination(player.transform.position);
-            Debug.Log(agent.destination);
         }
         
         Animating(isStalking);
@@ -46,6 +45,6 @@ public class StalkerNav : MonoBehaviour
     // Set parameters used in conditions of transitions in Animator component based on state id
     void Animating(bool isStalking)
     {
-        anim.SetBool("IsRunning", isStalking);
+        anim.SetBool("IsWalking", isStalking);
     }
 }

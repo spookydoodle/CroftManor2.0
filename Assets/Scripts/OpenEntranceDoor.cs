@@ -22,7 +22,6 @@ public class OpenEntranceDoor : MonoBehaviour
         bool key = Input.GetKeyDown(KeyCode.E);
 
         Animating(key);
-        Debug.Log(isPressed);
     }
 
     // Set parameters used in conditions of transitions in Animator component

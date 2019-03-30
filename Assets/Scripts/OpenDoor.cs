@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
+    public GameObject player;
+    public GameObject door;
+    public GameObject button;
     private Animator buttonAnim;
     private Animator doorAnim;
-    public GameObject button;
-    public GameObject door;
-    public GameObject player;
 
     private bool isPressed = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        GameObject button = gameObject.GetComponent<GameObject>();
-        Animator buttonAnim = gameObject.GetComponent<Animator>();
+        Animator buttonAnim = button.gameObject.GetComponent<Animator>();
         Animator doorAnim = door.gameObject.GetComponent<Animator>();
     }
 
@@ -24,16 +23,17 @@ public class OpenDoor : MonoBehaviour
     void Update()
     {
         bool key = Input.GetKeyDown(KeyCode.E);
-        bool isWithinRadius = checkDistance(button, player);
-        Debug.Log(isWithinRadius);
-        
+        bool isWithinRadius = checkDistance(button.transform.position, player.transform.position);
+        Debug.Log(isWithinRadius); Debug.Log(buttonAnim);
+
+        //Animating(key, isWithinRadius);
         Animating(key, isWithinRadius);
     }
 
 
-    bool checkDistance(GameObject button, GameObject player)
+    bool checkDistance(Vector3 buttonPos, Vector3 playerPos)
     {
-        return Vector3.Distance(button.transform.position, player.transform.position) < 1;
+        return Vector3.Distance(buttonPos, playerPos) < 2;
     }
 
 
