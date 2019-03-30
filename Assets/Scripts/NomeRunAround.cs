@@ -60,14 +60,7 @@ public class NomeRunAround : MonoBehaviour
         //if (!agent.pathPending && agent.remainingDistance < 0.5f)
         //    GotoNextPoint();
 
-        if(prevPos != agent.transform.position)
-        {
-            isWalking = true;
-        } 
-        else
-        {
-            isWalking = false;
-        }
+        
 
         timer += Time.deltaTime;
 
@@ -76,6 +69,15 @@ public class NomeRunAround : MonoBehaviour
             Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
             agent.SetDestination(newPos);
             timer = 0;
+        }
+
+        if (prevPos != agent.transform.position)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
         }
 
         prevPos = agent.transform.position;
