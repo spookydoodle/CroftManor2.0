@@ -606,7 +606,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 240883161}
   door: {fileID: 1567112826}
-  button: {fileID: 541315954}
 --- !u!1001 &711612344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1338,7 +1337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 240883161}
   door: {fileID: 1786430923}
-  button: {fileID: 1132691294}
 --- !u!1 &1145925335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1459,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 240883161}
   door: {fileID: 1408229006}
-  button: {fileID: 1270651105}
 --- !u!1001 &1305733225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1516,6 +1513,16 @@ PrefabInstance:
     - target: {fileID: 4841353817388060, guid: c4e7e1e31fad8204bb38369907d65b5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54327053129391098, guid: c4e7e1e31fad8204bb38369907d65b5c,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 54327053129391098, guid: c4e7e1e31fad8204bb38369907d65b5c,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114922105506325192, guid: c4e7e1e31fad8204bb38369907d65b5c, type: 3}
