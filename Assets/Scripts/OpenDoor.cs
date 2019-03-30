@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class OpenDoor : MonoBehaviour
 {
-    public Animator buttonAnim;
-    public Animator doorAnim;
+    private Animator buttonAnim;
+    private Animator doorAnim;
+    public GameObject button;
     public GameObject door;
+    public GameObject player;
 
     private bool isPressed = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        GameObject button = gameObject.GetComponent<GameObject>();
         Animator buttonAnim = gameObject.GetComponent<Animator>();
         Animator doorAnim = door.gameObject.GetComponent<Animator>();
     }
@@ -21,25 +24,36 @@ public class OpenDoor : MonoBehaviour
     void Update()
     {
         bool key = Input.GetKeyDown(KeyCode.E);
+        bool isWithinRadius = checkDistance(button, player);
+        Debug.Log(isWithinRadius);
         
-        Animating(key);
+        Animating(key, isWithinRadius);
     }
 
-    // Set parameters used in conditions of transitions in Animator component
-    void Animating(bool key)
+
+    bool checkDistance(GameObject button, GameObject player)
     {
-        
-        if (key && !isPressed)
+        return Vector3.Distance(button.transform.position, player.transform.position) < 1;
+    }
+
+
+    // Set parameters used in conditions of transitions in Animator component
+    void Animating(bool key, bool isWithinRadius)
+    {
+        if (isWithinRadius)
         {
-            buttonAnim.SetTrigger("Press");
-            doorAnim.SetTrigger("Open");
-            isPressed = true;
-        }
-        else if (key && isPressed)
-        {
-            buttonAnim.SetTrigger("Release");
-            doorAnim.SetTrigger("Close");
-            isPressed = false;
+            if (key && !isPressed)
+            {
+                buttonAnim.SetTrigger("Press");
+                doorAnim.SetTrigger("Open");
+                isPressed = true;
+            }
+            else if (key && isPressed)
+            {
+                buttonAnim.SetTrigger("Release");
+                doorAnim.SetTrigger("Close");
+                isPressed = false;
+            }
         }
     }
 }
