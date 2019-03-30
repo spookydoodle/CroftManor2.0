@@ -9,6 +9,7 @@ public class PlayerCharacterController : MonoBehaviour {
     public float rotationSpeed = 75.0f;
     public float jumpSpeed = 25.0f;
     public float gravity = 5.0f;
+    public float buoyancy = 4.0f;
 
     // State
     private bool isSwimming = false;
@@ -27,27 +28,20 @@ public class PlayerCharacterController : MonoBehaviour {
         Animator anim = gameObject.GetComponent<Animator>();
     }
 
-    // Detect collision with floor
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Water") {
-            isSwimming = true;
-        }
+       if (other.gameObject.tag == "Water")
+       {
+           isSwimming = true;
+       }
     }
 
-    //void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.gameObject.tag == "Water")
-    //    {
-    //        isSwimming = true;
-    //    }
-    //}
-
-    void OnCollisionExit(Collision collision)
+    void OnTriggerExit(Collider other)
     {
-        if (collision.gameObject.tag == "Water") {
-            isSwimming = false;
-        }
+       if (other.gameObject.tag == "Water")
+       {
+           isSwimming = false;
+       }
     }
 
     // Update is called once per frame
@@ -105,10 +99,10 @@ public class PlayerCharacterController : MonoBehaviour {
 
     void Jump()
     {
-        if (_controller.isGrounded) {
+        if (isSwimming) {
+            speed.y += jumpSpeed;
+        } else if (_controller.isGrounded) {
             speed.y = jumpSpeed;
-        } else if (isSwimming) {
-            speed.y += 0.5f * jumpSpeed;
         }
     }
 
@@ -116,8 +110,9 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         if (!_controller.isGrounded) {
           speed.y -= gravity;
-        } else if (isSwimming) {
-            speed.y -= 0.5f * gravity;
+            if (isSwimming) {
+                speed.y += buoyancy;
+            }
         }
     }
 
