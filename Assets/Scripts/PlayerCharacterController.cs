@@ -75,7 +75,7 @@ public class PlayerCharacterController : MonoBehaviour {
         {
             Rotate(h);
         }
-        Debug.Log(h); Debug.Log(f);
+        
         Move();
 
         // Set animations for movement

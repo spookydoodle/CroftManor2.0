@@ -5,12 +5,16 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
     public GameObject target;            // The position that that camera will be following.
-    Vector3 offset;                     // The initial offset from the target.
+    Vector3 offset;                     // The initial offset from the target.\
+    float mouseX, mouseY;
+    public float RotationSpeed = 1.0f;
 
     void Start()
     {
         // Calculate the initial offset.
         offset = target.transform.position - transform.position;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     //void FixedUpdate()
@@ -24,11 +28,33 @@ public class CameraFollow : MonoBehaviour {
 
     void LateUpdate()
     {
+        mouseX += Input.GetAxis("Mouse X") * RotationSpeed;
+        mouseY -= Input.GetAxis("Mouse Y") * RotationSpeed;
         float angle = target.transform.eulerAngles.y;
-        Quaternion rotation = Quaternion.Euler(0, angle, 0);
+        Quaternion rotation = Quaternion.Euler(0, angle+mouseX, 0);
+        Quaternion camRotation = Quaternion.Euler(mouseY, mouseX, 0);
+
+        transform.LookAt(target.transform);
+
+
         transform.position = target.transform.position - (rotation * offset);
-        transform.rotation = target.transform.rotation * Quaternion.Euler(5, 0, 0);
+        transform.rotation = target.transform.rotation * camRotation;
         //transform.position = target.transform.position - offset;
-        //transform.LookAt(target.transform);
+        //target.transform.rotation = Quaternion.Euler(0, mouseX, 0);
+
+        //CamControl();
+    }
+
+
+    void CamControl()
+    {
+        
+        mouseY = Mathf.Clamp(mouseY, -35, 60);
+
+        transform.LookAt(target.transform);
+
+        target.transform.rotation = Quaternion.Euler(mouseY, mouseX, 0);
+        //player.transform.rotation = Quaternion.Euler(0, mouseX, 0);
+
     }
 }
