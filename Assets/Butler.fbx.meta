@@ -41,6 +41,10 @@ ModelImporter:
     100070: Spine
     100072: Spine_end
     100074: SpineCenter
+    100076: Camera
+    100078: Character
+    100080: Lamp
+    100082: Lamp.001
     400000: Arm.L
     400002: Arm.R
     400004: Arm2.L
@@ -79,6 +83,11 @@ ModelImporter:
     400070: Spine
     400072: Spine_end
     400074: SpineCenter
+    400076: Camera
+    400078: Character
+    400080: Lamp
+    400082: Lamp.001
+    2000000: Camera
     2100000: FurPurple
     2100002: JeansBlack
     2100004: RubberWhite
@@ -94,6 +103,8 @@ ModelImporter:
     7400004: walk
     7400006: Armature|WalkBack
     9500000: //RootNode
+    10800000: Lamp
+    10800002: Lamp.001
     13700000: Body
     2186277476908879412: ImportLogs
   externalObjects: {}
@@ -186,6 +197,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -210,6 +222,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -224,7 +239,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
