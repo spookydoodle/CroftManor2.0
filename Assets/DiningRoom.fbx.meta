@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: fa6fb0a3222fd9e4d93e33ffd45438c3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: DiningRoomCeiling
+    100004: DiningRoomFloorTiles
+    100006: DiningRoomWallB0Back
+    100008: DiningRoomWallB0Front
+    100010: DiningRoomWallB0Left
+    100012: DiningRoomWallB0Left.001
+    100014: DiningRoomWallB0Right
+    100016: DiningRoomWallB0Right.001
+    100018: DiningRoomWallB1Back
+    100020: DiningRoomWallB1Front
+    100022: DiningRoomWallB1Front.001
+    100024: DiningRoomWallB1Left
+    100026: DiningRoomWallB1Right
+    100028: DiningRoomWallB2Back
+    100030: DiningRoomWallB2Front
+    100032: DiningRoomWallB2Left
+    100034: DiningRoomWallB2Right
+    100036: DiningRoomWallWindow
+    100038: DiningRoomWallWindow.001
+    100040: DiningRoomWindow
+    400000: //RootNode
+    400002: DiningRoomCeiling
+    400004: DiningRoomFloorTiles
+    400006: DiningRoomWallB0Back
+    400008: DiningRoomWallB0Front
+    400010: DiningRoomWallB0Left
+    400012: DiningRoomWallB0Left.001
+    400014: DiningRoomWallB0Right
+    400016: DiningRoomWallB0Right.001
+    400018: DiningRoomWallB1Back
+    400020: DiningRoomWallB1Front
+    400022: DiningRoomWallB1Front.001
+    400024: DiningRoomWallB1Left
+    400026: DiningRoomWallB1Right
+    400028: DiningRoomWallB2Back
+    400030: DiningRoomWallB2Front
+    400032: DiningRoomWallB2Left
+    400034: DiningRoomWallB2Right
+    400036: DiningRoomWallWindow
+    400038: DiningRoomWallWindow.001
+    400040: DiningRoomWindow
+    2100000: TileBlackWhite
+    2100002: Wall
+    2100004: WhiteWall
+    2100006: WindowGolden
+    2100008: WallWhiteWood2
+    2100010: WallWhiteWood
+    2300000: DiningRoomCeiling
+    2300002: DiningRoomFloorTiles
+    2300004: DiningRoomWallB0Back
+    2300006: DiningRoomWallB0Front
+    2300008: DiningRoomWallB0Left
+    2300010: DiningRoomWallB0Left.001
+    2300012: DiningRoomWallB0Right
+    2300014: DiningRoomWallB0Right.001
+    2300016: DiningRoomWallB1Back
+    2300018: DiningRoomWallB1Front
+    2300020: DiningRoomWallB1Front.001
+    2300022: DiningRoomWallB1Left
+    2300024: DiningRoomWallB1Right
+    2300026: DiningRoomWallB2Back
+    2300028: DiningRoomWallB2Front
+    2300030: DiningRoomWallB2Left
+    2300032: DiningRoomWallB2Right
+    2300034: DiningRoomWallWindow
+    2300036: DiningRoomWallWindow.001
+    2300038: DiningRoomWindow
+    3300000: DiningRoomCeiling
+    3300002: DiningRoomFloorTiles
+    3300004: DiningRoomWallB0Back
+    3300006: DiningRoomWallB0Front
+    3300008: DiningRoomWallB0Left
+    3300010: DiningRoomWallB0Left.001
+    3300012: DiningRoomWallB0Right
+    3300014: DiningRoomWallB0Right.001
+    3300016: DiningRoomWallB1Back
+    3300018: DiningRoomWallB1Front
+    3300020: DiningRoomWallB1Front.001
+    3300022: DiningRoomWallB1Left
+    3300024: DiningRoomWallB1Right
+    3300026: DiningRoomWallB2Back
+    3300028: DiningRoomWallB2Front
+    3300030: DiningRoomWallB2Left
+    3300032: DiningRoomWallB2Right
+    3300034: DiningRoomWallWindow
+    3300036: DiningRoomWallWindow.001
+    3300038: DiningRoomWindow
+    4300000: DiningRoomFloorTiles
+    4300002: DiningRoomWallB0Left.001
+    4300004: DiningRoomWallB0Right.001
+    4300006: DiningRoomCeiling
+    4300008: DiningRoomWallWindow.001
+    4300010: DiningRoomWindow
+    4300012: DiningRoomWallB2Right
+    4300014: DiningRoomWallB2Back
+    4300016: DiningRoomWallB2Left
+    4300018: DiningRoomWallB1Right
+    4300020: DiningRoomWallB1Left
+    4300022: DiningRoomWallB1Back
+    4300024: DiningRoomWallB0Left
+    4300026: DiningRoomWallB0Back
+    4300028: DiningRoomWallB0Right
+    4300030: DiningRoomWallB1Front.001
+    4300032: DiningRoomWallB2Front
+    6400000: DiningRoomCeiling
+    6400002: DiningRoomFloorTiles
+    6400004: DiningRoomWallB0Back
+    6400006: DiningRoomWallB0Left
+    6400008: DiningRoomWallB0Left.001
+    6400010: DiningRoomWallB0Right
+    6400012: DiningRoomWallB0Right.001
+    6400014: DiningRoomWallB1Back
+    6400016: DiningRoomWallB1Front.001
+    6400018: DiningRoomWallB1Left
+    6400020: DiningRoomWallB1Right
+    6400022: DiningRoomWallB2Back
+    6400024: DiningRoomWallB2Front
+    6400026: DiningRoomWallB2Left
+    6400028: DiningRoomWallB2Right
+    6400030: DiningRoomWallWindow
+    6400032: DiningRoomWallWindow.001
+    6400034: DiningRoomWindow
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
