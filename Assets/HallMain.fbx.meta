@@ -67,6 +67,8 @@ ModelImporter:
     100122: HallWindowRight
     100124: HallWallB0TunnelRight.002
     100126: HallWallB0TunnelRight.003
+    100128: HallFloorTiles.001
+    100130: HallWallB0TunnelLeft.002
     400000: HallFloorF1Back
     400002: HallFloorF1Left
     400004: HallFloorF1Right
@@ -131,6 +133,8 @@ ModelImporter:
     400122: HallWindowRight
     400124: HallWallB0TunnelRight.002
     400126: HallWallB0TunnelRight.003
+    400128: HallFloorTiles.001
+    400130: HallWallB0TunnelLeft.002
     2100000: WindowGolden
     2100002: WallWhiteWood2
     2100004: Wall
@@ -204,6 +208,8 @@ ModelImporter:
     2300120: HallWindowRight
     2300122: HallWallB0TunnelRight.002
     2300124: HallWallB0TunnelRight.003
+    2300126: HallFloorTiles.001
+    2300128: HallWallB0TunnelLeft.002
     3300000: HallFloorF1Back
     3300002: HallFloorF1Left
     3300004: HallFloorF1Right
@@ -267,6 +273,8 @@ ModelImporter:
     3300120: HallWindowRight
     3300122: HallWallB0TunnelRight.002
     3300124: HallWallB0TunnelRight.003
+    3300126: HallFloorTiles.001
+    3300128: HallWallB0TunnelLeft.002
     4300000: HallWindowRight
     4300002: HallWindowEntrance
     4300004: HallRoofRight
@@ -325,6 +333,8 @@ ModelImporter:
     4300110: HallStairsB1Right
     4300112: HallWallB0TunnelRight.002
     4300114: HallWallB0TunnelRight.003
+    4300116: HallFloorTiles.001
+    4300118: HallWallB0TunnelLeft.002
     6400000: HallFloorF1Back
     6400002: HallFloorF1Left
     6400004: HallFloorF1Right
@@ -388,6 +398,8 @@ ModelImporter:
     6400120: HallWindowRight
     6400122: HallWallB0TunnelRight.002
     6400124: HallWallB0TunnelRight.003
+    6400126: HallFloorTiles.001
+    6400128: HallWallB0TunnelLeft.002
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -2621,7 +2621,7 @@ Transform:
   m_LocalScale: {x: 1.0692124, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 62.890003, y: -161.326, z: -150.332}
 --- !u!1 &1071180898
 GameObject:
@@ -2690,7 +2690,7 @@ Transform:
   m_LocalScale: {x: 1.0692124, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 3.6360002, y: -10.557, z: 12.675}
 --- !u!1001 &1081271528
 PrefabInstance:
@@ -3760,7 +3760,7 @@ Transform:
   m_LocalScale: {x: 1.0692124, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1890322328 stripped
 GameObject:
@@ -3927,7 +3927,7 @@ Transform:
   m_LocalScale: {x: 1.0692124, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1938690449
 GameObject:
@@ -4058,6 +4058,82 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020000005, y: 0.043500002, z: 0.0010000026}
   m_Center: {x: -0.009999997, y: 0.021750001, z: -0.00049999735}
+--- !u!1001 &2077908091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_Name
+      value: DoorDiningRoomKitchen
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000013240823
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000013240823
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.000015258789
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
+--- !u!1 &2077908092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: a4b4cfa620e9cfd4386863893e760038,
+    type: 3}
+  m_PrefabInstance: {fileID: 2077908091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2077908093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077908092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020000013, y: 0.020000007, z: 0.0014000067}
+  m_Center: {x: -0.010000004, y: 0.009999996, z: 0.0005000004}
 --- !u!1 &2106350427 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fd316e4eb2e82564e95e8deb5c81a4c6,
