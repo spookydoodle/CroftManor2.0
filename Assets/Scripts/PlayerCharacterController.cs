@@ -6,7 +6,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     // Constants
     public float moveSpeed = 5.0f;
-    public float rotationSpeed = 75.0f;
+    public float rotationSpeed = 125.0f;
     public float jumpSpeed = 25.0f;
     public float gravity = 5.0f;
     public float buoyancy = 4.0f;
@@ -16,6 +16,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     // MovementState
     Vector3 speed = Vector3.zero;
+    Vector3 rotation = Vector3.zero;
 
     // Unity
     CharacterController _controller;
@@ -48,7 +49,7 @@ public class PlayerCharacterController : MonoBehaviour {
     void Update() {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        float f = Input.GetAxisRaw("Fire1");
+        float f = Input.GetAxis("Fire1");
         bool j = Input.GetButtonDown("Jump");
 
         if (j)
@@ -60,22 +61,8 @@ public class PlayerCharacterController : MonoBehaviour {
         
         MoveForward(v);
 
-        // Reverse rotation when moving backwards
-        if (h != 0f && v < 0f)
-        {
-            h = -h;
-        }
+        HandleRotationAndSideMovement(h, v < 0, f != 0f);
 
-        // Combination ctrl and Right/Left (D, A) arrows - moves sideways, otherwise rotate
-        if (h != 0f && f != 0f)
-        {
-            MoveSideways(h);
-        }
-        else
-        {
-            Rotate(h);
-        }
-        
         Move();
 
         // Set animations for movement
@@ -87,14 +74,20 @@ public class PlayerCharacterController : MonoBehaviour {
         speed.z = moveSpeed * v;
     }
 
-    void MoveSideways(float h)
+    void HandleRotationAndSideMovement(float inputValue, bool movingBackwards, bool moveSideways)
     {
-        speed.x = h;
-    }
-
-    void Rotate(float h)
-    {
-        transform.Rotate(0.0f, rotationSpeed * h * Time.deltaTime, 0.0f);
+        if (moveSideways)
+        {
+            speed.x = moveSpeed * inputValue;
+            rotation.y = 0;
+        }
+        else  // rotate
+        {
+            // reverse rotation if moving backwards
+            float rotationValue = movingBackwards ? -inputValue : inputValue;
+            rotation.y = rotationValue * rotationSpeed;
+            speed.x = 0;
+        }
     }
 
     void Jump()
@@ -118,7 +111,13 @@ public class PlayerCharacterController : MonoBehaviour {
 
     void Move()
     {
-        _controller.Move(transform.TransformDirection((speed * Time.deltaTime)));
+        // Apply movement vectors
+        _controller.Move(transform.TransformDirection(speed * Time.deltaTime));
+        transform.Rotate(rotation * Time.deltaTime);
+
+        // Clean vectors for next iteration
+        // speed = Vector3.zero;
+        // rotation = Vector3.zero;
     }
 
     // Set parameters used in conditions of transitions in Animator component
