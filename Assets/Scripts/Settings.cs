@@ -1,6 +1,6 @@
 public static class Settings
 {
-    public static float mouseSensitivity()
+    public static float MouseSensitivity()
     {
         return 5f;
     }

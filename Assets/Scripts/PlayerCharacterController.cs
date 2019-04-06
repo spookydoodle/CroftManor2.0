@@ -10,7 +10,6 @@ public class PlayerCharacterController : MonoBehaviour {
     public float jumpSpeed = 25.0f;
     public float gravity = 5.0f;
     public float buoyancy = 4.0f;
-    public float mouseSensitivity = 5f;
 
     // State
     private bool isSwimming = false;
@@ -60,7 +59,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
         Fall();
         
-        HandleRotation(x * Settings.mouseSensitivity());
+        HandleRotation(x * Settings.MouseSensitivity());
         
         HandleSideMovement(h);
         
@@ -76,6 +75,7 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         speed.z = moveSpeed * v;
     }
+
     void HandleRotation(float rotationValue)
     {
         rotation.y = rotationValue * rotationSpeed;
