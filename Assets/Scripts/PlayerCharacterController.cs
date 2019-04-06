@@ -10,6 +10,7 @@ public class PlayerCharacterController : MonoBehaviour {
     public float jumpSpeed = 25.0f;
     public float gravity = 5.0f;
     public float buoyancy = 4.0f;
+    public float mouseSensitivity = 5f;
 
     // State
     private bool isSwimming = false;
@@ -49,9 +50,9 @@ public class PlayerCharacterController : MonoBehaviour {
     void Update() {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        float f = Input.GetAxis("Fire1");
         bool j = Input.GetButtonDown("Jump");
-
+        float x = Input.GetAxis("Mouse X");
+        
         if (j)
         {
             Jump();
@@ -59,9 +60,11 @@ public class PlayerCharacterController : MonoBehaviour {
 
         Fall();
         
+        HandleRotation(x * Settings.mouseSensitivity());
+        
+        HandleSideMovement(h);
+        
         MoveForward(v);
-
-        HandleRotationAndSideMovement(h, v < 0, f != 0f);
 
         Move();
 
@@ -73,21 +76,14 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         speed.z = moveSpeed * v;
     }
-
-    void HandleRotationAndSideMovement(float inputValue, bool movingBackwards, bool moveSideways)
+    void HandleRotation(float rotationValue)
     {
-        if (moveSideways)
-        {
-            speed.x = moveSpeed * inputValue;
-            rotation.y = 0;
-        }
-        else  // rotate
-        {
-            // reverse rotation if moving backwards
-            float rotationValue = movingBackwards ? -inputValue : inputValue;
-            rotation.y = rotationValue * rotationSpeed;
-            speed.x = 0;
-        }
+        rotation.y = rotationValue * rotationSpeed;
+    }
+
+    void HandleSideMovement(float inputValue)
+    {
+        speed.x = moveSpeed * inputValue;
     }
 
     void Jump()
@@ -114,10 +110,6 @@ public class PlayerCharacterController : MonoBehaviour {
         // Apply movement vectors
         _controller.Move(transform.TransformDirection(speed * Time.deltaTime));
         transform.Rotate(rotation * Time.deltaTime);
-
-        // Clean vectors for next iteration
-        // speed = Vector3.zero;
-        // rotation = Vector3.zero;
     }
 
     // Set parameters used in conditions of transitions in Animator component
