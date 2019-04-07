@@ -6,7 +6,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     // Constants
     public float moveSpeed = 5.0f;
-    public float rotationSpeed = 75.0f;
+    public float rotationSpeed = 125.0f;
     public float jumpSpeed = 25.0f;
     public float gravity = 5.0f;
     public float buoyancy = 4.0f;
@@ -16,6 +16,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     // MovementState
     Vector3 speed = Vector3.zero;
+    Vector3 rotation = Vector3.zero;
 
     // Unity
     CharacterController _controller;
@@ -48,9 +49,9 @@ public class PlayerCharacterController : MonoBehaviour {
     void Update() {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        float f = Input.GetAxisRaw("Fire1");
         bool j = Input.GetButtonDown("Jump");
-
+        float x = Input.GetAxis("Mouse X");
+        
         if (j)
         {
             Jump();
@@ -58,24 +59,12 @@ public class PlayerCharacterController : MonoBehaviour {
 
         Fall();
         
+        HandleRotation(x * Settings.MouseSensitivity());
+        
+        HandleSideMovement(h);
+        
         MoveForward(v);
 
-        // Reverse rotation when moving backwards
-        if (h != 0f && v < 0f)
-        {
-            h = -h;
-        }
-
-        // Combination ctrl and Right/Left (D, A) arrows - moves sideways, otherwise rotate
-        if (h != 0f && f != 0f)
-        {
-            MoveSideways(h);
-        }
-        else
-        {
-            Rotate(h);
-        }
-        
         Move();
 
         // Set animations for movement
@@ -87,14 +76,14 @@ public class PlayerCharacterController : MonoBehaviour {
         speed.z = moveSpeed * v;
     }
 
-    void MoveSideways(float h)
+    void HandleRotation(float rotationValue)
     {
-        speed.x = h;
+        rotation.y = rotationValue * rotationSpeed;
     }
 
-    void Rotate(float h)
+    void HandleSideMovement(float inputValue)
     {
-        transform.Rotate(0.0f, rotationSpeed * h * Time.deltaTime, 0.0f);
+        speed.x = moveSpeed * inputValue;
     }
 
     void Jump()
@@ -118,7 +107,9 @@ public class PlayerCharacterController : MonoBehaviour {
 
     void Move()
     {
-        _controller.Move(transform.TransformDirection((speed * Time.deltaTime)));
+        // Apply movement vectors
+        _controller.Move(transform.TransformDirection(speed * Time.deltaTime));
+        transform.Rotate(rotation * Time.deltaTime);
     }
 
     // Set parameters used in conditions of transitions in Animator component
