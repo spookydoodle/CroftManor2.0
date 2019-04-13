@@ -7,43 +7,66 @@ public class CameraFollow : MonoBehaviour {
     public GameObject target;  // The position that that camera will be following.
     public bool invertYaxis = false;
 
-    private float smoothing = 1f;
-    private float rotationSpeed = 1f;
-    private Vector3 offset;  // The initial offset from the target.
-    private Vector3 rotation = Vector3.zero;
+    private float smoothing = 2f;
+    private float rotationSpeed = 2.5f;
+    private Vector3 basePositionOffset;  // The base distance from the target.
+    private Vector3 baseRotationOffset;  // The base rotation relative to the target.
+    private Vector3 extraRotation = Vector3.zero;  // Extra rotation (e.g. caused by user input)
     private int setInvYax;
 
     void Start()
     {
-        offset = target.transform.position - transform.position;
+        basePositionOffset = target.transform.position - transform.position;
+        baseRotationOffset = target.transform.rotation.eulerAngles - transform.rotation.eulerAngles;
         handleSettings(invertYaxis);
     }
 
     void Update()
     {
         float y = Input.GetAxis("Mouse Y");
-        // HandleRotation(setInvYax * y * Settings.MouseSensitivity());
-        SetCameraTransform();
+        float x = Input.GetAxis("Mouse X");
+        HandleRotation(setInvYax * y * Settings.MouseSensitivity(), x * Settings.MouseSensitivity());
+
+        if (this.shouldFollow())
+        {
+            Follow();
+        }
+
+        Move();
     }
 
-    void HandleRotation(float rotationValue)
+    void HandleRotation(float rotationX, float rotationY)
     {
-        float rotationX = rotationValue * rotationSpeed;
-        rotation.x = Mathf.Clamp(rotationX, -15f, 50f);
+        extraRotation.x += rotationX * rotationSpeed;
+        extraRotation.y += rotationY * rotationSpeed;
+        extraRotation.x = Mathf.Clamp(extraRotation.x, -15f, 50f);
     }
 
-    void SetCameraTransform()
+    bool shouldFollow()
     {
-	Quaternion targetRotation = target.transform.rotation;
-	Quaternion baseRotation = transform.rotation;
-	float lerp = Time.deltaTime * smoothing;
-
-        transform.SetPositionAndRotation(target.transform.position, Quaternion.Lerp(baseRotation, targetRotation, lerp));
+        // The camera should not follow if the character is facing the camera
+        Vector3 diff = this.target.transform.rotation.eulerAngles - this.transform.rotation.eulerAngles;
+        float angle = diff.y;
         
-        transform.Rotate(rotation);
+        float range = 30f;
+        float backwardsAngle = 180f;  // 180 degrees -> character is looking at the camera
+        bool isLookingAtCamera = angle < (backwardsAngle - range) || (backwardsAngle + range) > 210f;
+        return isLookingAtCamera;
+    }
+
+    void Follow()
+    {
+        float lerp = Time.deltaTime * smoothing;
+        extraRotation = Vector3.Lerp(extraRotation, target.transform.rotation.eulerAngles, lerp);
+    }
+
+    void Move()
+    {
+        Quaternion newRotation = Quaternion.Euler(baseRotationOffset + extraRotation);
+        this.transform.SetPositionAndRotation(target.transform.position, newRotation);
         
         // Translate by the offset *after* setting the rotation -> translation takes rotation into account
-        transform.Translate(-offset);
+        this.transform.Translate(-basePositionOffset);
     }
 
     void handleSettings(bool invertYaxis)
