@@ -49,11 +49,8 @@ public class PlayerCharacterController : MonoBehaviour {
     void Update() {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
-        float alternative = Input.GetAxis("Fire2");
         bool j = Input.GetButtonDown("Jump");
         
-        bool alternativeMovement = alternative != 0.0f;
-
         // Up-Down movement
         if (j)
         {
@@ -63,15 +60,8 @@ public class PlayerCharacterController : MonoBehaviour {
         Fall();
         
         // Left-Right movement
-        if (!alternativeMovement)
-        {
-            HandleRotation(v, h);
-        }
-        else
-        {
-            HandleSideMovement(h);
-        }
-
+        HandleRotation(v, h);
+        
         // Front movement
         MoveForward(v, h);
 
@@ -94,14 +84,9 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         // Rotation is based on the ratio of frontBack and leftRight inputs
         // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
-        
+        // TODO: get a reference to the camera, rotate relative to camera's POV
         float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
         rotation.y = angle;
-    }
-
-    void HandleSideMovement(float inputValue)
-    {
-        speed.x = moveSpeed * inputValue;
     }
 
     void Jump()
