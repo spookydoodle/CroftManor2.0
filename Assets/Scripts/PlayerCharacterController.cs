@@ -72,8 +72,8 @@ public class PlayerCharacterController : MonoBehaviour {
             HandleSideMovement(h);
         }
 
-        // Front-Back movement
-        MoveForward(v);
+        // Front movement
+        MoveForward(v, h);
 
         // Apply computed movement
         Move();
@@ -82,9 +82,12 @@ public class PlayerCharacterController : MonoBehaviour {
         Animating(v, h);
     }
 
-    void MoveForward(float v)
+    void MoveForward(float frontBack, float leftRight)
     {
-        speed.z = moveSpeed * v;
+        // Speed depends on the input with the largest amplitude, i.e.
+        // Trigger pushed all the way up or all the way left will result in the same speed
+        float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
+        speed.z = moveSpeed * magnitude;
     }
 
     void HandleRotation(float frontBack, float leftRight)
