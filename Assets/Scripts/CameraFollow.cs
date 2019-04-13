@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour {
     public GameObject target;  // The position that that camera will be following.
     public bool invertYaxis = false;
 
+    private PlayerCharacterController playerController;
     private float smoothing = 2f;
     private float rotationSpeed = 2.5f;
     private Vector3 basePositionOffset;  // The base distance from the target.
@@ -16,6 +17,7 @@ public class CameraFollow : MonoBehaviour {
 
     void Start()
     {
+        playerController = target.gameObject.GetComponent<PlayerCharacterController>();
         basePositionOffset = target.transform.position - transform.position;
         baseRotationOffset = target.transform.rotation.eulerAngles - transform.rotation.eulerAngles;
         handleSettings(invertYaxis);
@@ -46,12 +48,13 @@ public class CameraFollow : MonoBehaviour {
     {
         // The camera should not follow if the character is facing the camera
         Vector3 diff = this.target.transform.rotation.eulerAngles - this.transform.rotation.eulerAngles;
-        float angle = diff.y;
+        float angle = Mathf.Abs(diff.y);
         
         float range = 30f;
         float backwardsAngle = 180f;  // 180 degrees -> character is looking at the camera
-        bool isLookingAtCamera = angle < (backwardsAngle - range) || (backwardsAngle + range) > 210f;
-        return isLookingAtCamera;
+        bool isLookingAtCamera = angle > (backwardsAngle - range) && angle < (backwardsAngle + range);
+
+        return this.playerController.IsMoving() && !isLookingAtCamera;
     }
 
     void Follow()

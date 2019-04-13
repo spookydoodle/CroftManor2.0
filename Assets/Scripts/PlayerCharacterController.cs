@@ -121,4 +121,9 @@ public class PlayerCharacterController : MonoBehaviour {
         bool walking = h != 0f || v != 0f;
         anim.SetBool("IsWalking", walking);
     }
+
+    public bool IsMoving()
+    {
+        return this.speed.z != 0f;
+    }
 }
