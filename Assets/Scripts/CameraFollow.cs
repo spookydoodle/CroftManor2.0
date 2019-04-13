@@ -7,6 +7,7 @@ public class CameraFollow : MonoBehaviour {
     public GameObject target;  // The position that that camera will be following.
     public bool invertYaxis = false;
 
+    private float smoothing = 1f;
     private float rotationSpeed = 1f;
     private Vector3 offset;  // The initial offset from the target.
     private Vector3 rotation = Vector3.zero;
@@ -21,23 +22,23 @@ public class CameraFollow : MonoBehaviour {
     void Update()
     {
         float y = Input.GetAxis("Mouse Y");
-        HandleRotation(setInvYax * y * Settings.MouseSensitivity());
+        // HandleRotation(setInvYax * y * Settings.MouseSensitivity());
         SetCameraTransform();
     }
 
     void HandleRotation(float rotationValue)
     {
-        rotation.x += rotationValue * rotationSpeed;
-
-        // Limit the rotation to <-45: Down, 90: Up>
-        rotation.x = Mathf.Clamp(rotation.x, -15f, 50f);
-        Debug.Log(rotation.x);
+        float rotationX = rotationValue * rotationSpeed;
+        rotation.x = Mathf.Clamp(rotationX, -15f, 50f);
     }
 
     void SetCameraTransform()
     {
-        // Copy the target's transform
-        transform.SetPositionAndRotation(target.transform.position, target.transform.rotation);
+	Quaternion targetRotation = target.transform.rotation;
+	Quaternion baseRotation = transform.rotation;
+	float lerp = Time.deltaTime * smoothing;
+
+        transform.SetPositionAndRotation(target.transform.position, Quaternion.Lerp(baseRotation, targetRotation, lerp));
         
         transform.Rotate(rotation);
         

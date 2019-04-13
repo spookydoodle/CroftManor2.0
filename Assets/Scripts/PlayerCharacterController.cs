@@ -6,7 +6,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     // Constants
     public float moveSpeed = 5.0f;
-    public float rotationSpeed = 125.0f;
+    public float rotationSpeed = 5.0f;
     public float jumpSpeed = 25.0f;
     public float gravity = 5.0f;
     public float buoyancy = 4.0f;
@@ -49,9 +49,12 @@ public class PlayerCharacterController : MonoBehaviour {
     void Update() {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
+        float alternative = Input.GetAxis("Fire2");
         bool j = Input.GetButtonDown("Jump");
-        float x = Input.GetAxis("Mouse X");
         
+        bool alternativeMovement = alternative != 0.0f;
+
+        // Up-Down movement
         if (j)
         {
             Jump();
@@ -59,12 +62,20 @@ public class PlayerCharacterController : MonoBehaviour {
 
         Fall();
         
-        HandleRotation(x * Settings.MouseSensitivity());
-        
-        HandleSideMovement(h);
-        
+        // Left-Right movement
+        if (!alternativeMovement)
+        {
+            HandleRotation(v, h);
+        }
+        else
+        {
+            HandleSideMovement(h);
+        }
+
+        // Front-Back movement
         MoveForward(v);
 
+        // Apply computed movement
         Move();
 
         // Set animations for movement
@@ -76,9 +87,13 @@ public class PlayerCharacterController : MonoBehaviour {
         speed.z = moveSpeed * v;
     }
 
-    void HandleRotation(float rotationValue)
+    void HandleRotation(float frontBack, float leftRight)
     {
-        rotation.y = rotationValue * rotationSpeed;
+        // Rotation is based on the ratio of frontBack and leftRight inputs
+        // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
+        
+        float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
+        rotation.y = angle;
     }
 
     void HandleSideMovement(float inputValue)
@@ -109,7 +124,7 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         // Apply movement vectors
         _controller.Move(transform.TransformDirection(speed * Time.deltaTime));
-        transform.Rotate(rotation * Time.deltaTime);
+        transform.Rotate(rotation * rotationSpeed * Time.deltaTime);
     }
 
     // Set parameters used in conditions of transitions in Animator component
