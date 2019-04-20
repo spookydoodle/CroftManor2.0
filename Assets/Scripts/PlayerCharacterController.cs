@@ -6,7 +6,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     // Constants
     public float moveSpeed = 5.0f;
-    public float rotationSpeed = 125.0f;
+    public float rotationSpeed = 5.0f;
     public float jumpSpeed = 25.0f;
     public float gravity = 5.0f;
     public float buoyancy = 4.0f;
@@ -50,8 +50,8 @@ public class PlayerCharacterController : MonoBehaviour {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         bool j = Input.GetButtonDown("Jump");
-        float x = Input.GetAxis("Mouse X");
         
+        // Up-Down movement
         if (j)
         {
             Jump();
@@ -59,31 +59,34 @@ public class PlayerCharacterController : MonoBehaviour {
 
         Fall();
         
-        HandleRotation(x * Settings.MouseSensitivity());
+        // Left-Right movement
+        HandleRotation(v, h);
         
-        HandleSideMovement(h);
-        
-        MoveForward(v);
+        // Front movement
+        MoveForward(v, h);
 
+        // Apply computed movement
         Move();
 
         // Set animations for movement
         Animating(v, h);
     }
 
-    void MoveForward(float v)
+    void MoveForward(float frontBack, float leftRight)
     {
-        speed.z = moveSpeed * v;
+        // Speed depends on the input with the largest amplitude, i.e.
+        // Trigger pushed all the way up or all the way left will result in the same speed
+        float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
+        speed.z = moveSpeed * magnitude;
     }
 
-    void HandleRotation(float rotationValue)
+    void HandleRotation(float frontBack, float leftRight)
     {
-        rotation.y = rotationValue * rotationSpeed;
-    }
-
-    void HandleSideMovement(float inputValue)
-    {
-        speed.x = moveSpeed * inputValue;
+        // Rotation is based on the ratio of frontBack and leftRight inputs
+        // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
+        // TODO: get a reference to the camera, rotate relative to camera's POV
+        float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
+        rotation.y = angle;
     }
 
     void Jump()
@@ -109,7 +112,7 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         // Apply movement vectors
         _controller.Move(transform.TransformDirection(speed * Time.deltaTime));
-        transform.Rotate(rotation * Time.deltaTime);
+        transform.Rotate(rotation * rotationSpeed * Time.deltaTime);
     }
 
     // Set parameters used in conditions of transitions in Animator component
@@ -117,5 +120,10 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         bool walking = h != 0f || v != 0f;
         anim.SetBool("IsWalking", walking);
+    }
+
+    public bool IsMoving()
+    {
+        return this.speed.z != 0f;
     }
 }

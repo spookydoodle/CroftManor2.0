@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -1488,7 +1488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  rotationSpeed: 75
+  rotationSpeed: 5
   jumpSpeed: 60
   gravity: 10
   buoyancy: 8
@@ -1602,10 +1602,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: f2148076bd4644e4ba37aec9c82ec1db, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: f2148076bd4644e4ba37aec9c82ec1db, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -1703,6 +1699,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100042, guid: f2148076bd4644e4ba37aec9c82ec1db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f2148076bd4644e4ba37aec9c82ec1db, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2783,9 +2783,7 @@ MonoBehaviour:
   points: []
   agent: {fileID: 1081271531}
   anim: {fileID: 1081271537}
-  stalkerRadius: 5
   wanderRadius: 6
-  wanderTimer: 5
 --- !u!195 &1081271531
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3528,7 +3526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 240883161}
-  RotationSpeed: 1
+  invertYaxis: 0
 --- !u!1 &1567112826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fdee7aab57b2d06468db0b6cd5e19d07,
@@ -3857,9 +3855,7 @@ MonoBehaviour:
   points: []
   agent: {fileID: 1890322329}
   anim: {fileID: 1890322333}
-  stalkerRadius: 1.5
   wanderRadius: 6
-  wanderTimer: 2
 --- !u!1 &1937963962
 GameObject:
   m_ObjectHideFlags: 0
