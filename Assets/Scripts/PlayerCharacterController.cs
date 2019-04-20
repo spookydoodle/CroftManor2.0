@@ -51,6 +51,7 @@ public class PlayerCharacterController : MonoBehaviour {
         float v = Input.GetAxisRaw("Vertical");
         bool j = Input.GetButtonDown("Jump");
         
+
         // Up-Down movement
         if (j)
         {
