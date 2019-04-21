@@ -26,6 +26,8 @@ ModelImporter:
     100040: KitchenWindow.005
     100042: KitchenWallB0Back.003
     100044: KitchenWallB1Right.002
+    100046: KitchenWallB1Right.004
+    100048: Fridge
     400000: //RootNode
     400002: KitchenCeiling
     400004: KitchenFloorTiles
@@ -49,6 +51,8 @@ ModelImporter:
     400040: KitchenWindow.005
     400042: KitchenWallB0Back.003
     400044: KitchenWallB1Right.002
+    400046: KitchenWallB1Right.004
+    400048: Fridge
     2100000: White
     2100002: WhiteTransparent
     2100004: TilesRed
@@ -78,6 +82,8 @@ ModelImporter:
     2300038: KitchenWindow.005
     2300040: KitchenWallB0Back.003
     2300042: KitchenWallB1Right.002
+    2300044: KitchenWallB1Right.004
+    2300046: Fridge
     3300000: KitchenCeiling
     3300002: KitchenFloorTiles
     3300004: KitchenWallB0Back
@@ -100,6 +106,8 @@ ModelImporter:
     3300038: KitchenWindow.005
     3300040: KitchenWallB0Back.003
     3300042: KitchenWallB1Right.002
+    3300044: KitchenWallB1Right.004
+    3300046: Fridge
     4300000: KitchenWindow.005
     4300002: KitchenWindow.004
     4300004: KitchenWindow.003
@@ -122,6 +130,8 @@ ModelImporter:
     4300038: KitchenCeiling
     4300040: KitchenWallB0Back.003
     4300042: KitchenWallB1Right.002
+    4300044: KitchenWallB1Right.004
+    4300046: Fridge
     6400000: KitchenCeiling
     6400002: KitchenFloorTiles
     6400004: KitchenWallB0Back
@@ -144,6 +154,8 @@ ModelImporter:
     6400038: KitchenWindow.005
     6400040: KitchenWallB0Back.003
     6400042: KitchenWallB1Right.002
+    6400044: KitchenWallB1Right.004
+    6400046: Fridge
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -30,6 +30,26 @@ ModelImporter:
     100048: ConcertRoomWallDoor
     100050: HallWallB0TunnelRight
     100052: ConcertRoomCeiling
+    100054: Camera
+    100056: Ceiling_2x2x0.15_proxy
+    100058: ConcertRoomWall_0.15x1.7x2_proxy
+    100060: ConcertRoomWall_0.15x2x1_proxy
+    100062: ConcertRoomWall_0.15x2x2_proxy
+    100064: ConcertRoomWallDoor_1.7x2.3x2.15_proxy
+    100066: ConcertRoomWallStripes_0.15x2x1_proxy
+    100068: ConcertRoomWallStripes_0.15x2x2_proxy
+    100070: ConcertRoomWindow_2x8x5_proxy
+    100072: HallFloorTile_2x2x0.25_proxy
+    100074: HallWalls
+    100076: HallWallTunnelRight_2x10x3_proxy
+    100078: Lamp
+    100080: Lamp.001
+    100082: PARTS
+    100084: Point
+    100086: Point.001
+    100088: Sun
+    100090: Window_0.2x2x2_proxy
+    100092: Windows
     400000: Ceiling
     400002: //RootNode
     400004: ConcertRoomFloorTiles
@@ -57,6 +77,27 @@ ModelImporter:
     400048: ConcertRoomWallDoor
     400050: HallWallB0TunnelRight
     400052: ConcertRoomCeiling
+    400054: Camera
+    400056: Ceiling_2x2x0.15_proxy
+    400058: ConcertRoomWall_0.15x1.7x2_proxy
+    400060: ConcertRoomWall_0.15x2x1_proxy
+    400062: ConcertRoomWall_0.15x2x2_proxy
+    400064: ConcertRoomWallDoor_1.7x2.3x2.15_proxy
+    400066: ConcertRoomWallStripes_0.15x2x1_proxy
+    400068: ConcertRoomWallStripes_0.15x2x2_proxy
+    400070: ConcertRoomWindow_2x8x5_proxy
+    400072: HallFloorTile_2x2x0.25_proxy
+    400074: HallWalls
+    400076: HallWallTunnelRight_2x10x3_proxy
+    400078: Lamp
+    400080: Lamp.001
+    400082: PARTS
+    400084: Point
+    400086: Point.001
+    400088: Sun
+    400090: Window_0.2x2x2_proxy
+    400092: Windows
+    2000000: Camera
     2100000: WhiteWall
     2100002: WindowGolden
     2100004: Wall
@@ -90,6 +131,17 @@ ModelImporter:
     2300046: ConcertRoomWallDoor
     2300048: HallWallB0TunnelRight
     2300050: ConcertRoomCeiling
+    2300052: Ceiling_2x2x0.15_proxy
+    2300054: ConcertRoomWall_0.15x1.7x2_proxy
+    2300056: ConcertRoomWall_0.15x2x1_proxy
+    2300058: ConcertRoomWall_0.15x2x2_proxy
+    2300060: ConcertRoomWallDoor_1.7x2.3x2.15_proxy
+    2300062: ConcertRoomWallStripes_0.15x2x1_proxy
+    2300064: ConcertRoomWallStripes_0.15x2x2_proxy
+    2300066: ConcertRoomWindow_2x8x5_proxy
+    2300068: HallFloorTile_2x2x0.25_proxy
+    2300070: HallWallTunnelRight_2x10x3_proxy
+    2300072: Window_0.2x2x2_proxy
     3300000: Ceiling
     3300002: ConcertRoomFloorTiles
     3300004: ConcertRoomWallB0Back
@@ -116,6 +168,17 @@ ModelImporter:
     3300046: ConcertRoomWallDoor
     3300048: HallWallB0TunnelRight
     3300050: ConcertRoomCeiling
+    3300052: Ceiling_2x2x0.15_proxy
+    3300054: ConcertRoomWall_0.15x1.7x2_proxy
+    3300056: ConcertRoomWall_0.15x2x1_proxy
+    3300058: ConcertRoomWall_0.15x2x2_proxy
+    3300060: ConcertRoomWallDoor_1.7x2.3x2.15_proxy
+    3300062: ConcertRoomWallStripes_0.15x2x1_proxy
+    3300064: ConcertRoomWallStripes_0.15x2x2_proxy
+    3300066: ConcertRoomWindow_2x8x5_proxy
+    3300068: HallFloorTile_2x2x0.25_proxy
+    3300070: HallWallTunnelRight_2x10x3_proxy
+    3300072: Window_0.2x2x2_proxy
     4300000: Ceiling
     4300002: ConcertRoomWallWindow.005
     4300004: ConcertRoomWallWindow.004
@@ -141,6 +204,14 @@ ModelImporter:
     4300044: ConcertRoomWallB0Left.001
     4300046: HallWallB0TunnelRight
     4300048: ConcertRoomCeiling
+    4300050: ConcertRoomWall_0.15x1.7x2_proxy
+    4300052: Ceiling_2x2x0.15_proxy
+    4300054: ConcertRoomWallStripes_0.15x2x1_proxy
+    4300056: ConcertRoomWallStripes_0.15x2x2_proxy
+    4300058: ConcertRoomWall_0.15x2x1_proxy
+    4300060: ConcertRoomWall_0.15x2x2_proxy
+    4300062: HallWallTunnelRight_2x10x3_proxy
+    4300064: HallFloorTile_2x2x0.25_proxy
     6400000: Ceiling
     6400002: ConcertRoomFloorTiles
     6400004: ConcertRoomWallB0Back
@@ -167,6 +238,22 @@ ModelImporter:
     6400046: ConcertRoomWallDoor
     6400048: HallWallB0TunnelRight
     6400050: ConcertRoomCeiling
+    6400052: Ceiling_2x2x0.15_proxy
+    6400054: ConcertRoomWall_0.15x1.7x2_proxy
+    6400056: ConcertRoomWall_0.15x2x1_proxy
+    6400058: ConcertRoomWall_0.15x2x2_proxy
+    6400060: ConcertRoomWallDoor_1.7x2.3x2.15_proxy
+    6400062: ConcertRoomWallStripes_0.15x2x1_proxy
+    6400064: ConcertRoomWallStripes_0.15x2x2_proxy
+    6400066: ConcertRoomWindow_2x8x5_proxy
+    6400068: HallFloorTile_2x2x0.25_proxy
+    6400070: HallWallTunnelRight_2x10x3_proxy
+    6400072: Window_0.2x2x2_proxy
+    10800000: Lamp
+    10800002: Lamp.001
+    10800004: Point
+    10800006: Point.001
+    10800008: Sun
   externalObjects: {}
   materials:
     importMaterials: 1

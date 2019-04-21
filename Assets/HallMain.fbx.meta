@@ -70,6 +70,8 @@ ModelImporter:
     100128: HallFloorTiles.001
     100130: HallWallB0TunnelLeft.002
     100132: HallWallB0Left.002
+    100134: HallWallF1Left_1.001
+    100136: HallWallF1Right_2.001
     400000: HallFloorF1Back
     400002: HallFloorF1Left
     400004: HallFloorF1Right
@@ -137,6 +139,8 @@ ModelImporter:
     400128: HallFloorTiles.001
     400130: HallWallB0TunnelLeft.002
     400132: HallWallB0Left.002
+    400134: HallWallF1Left_1.001
+    400136: HallWallF1Right_2.001
     2100000: WindowGolden
     2100002: WallWhiteWood2
     2100004: Wall
@@ -213,6 +217,8 @@ ModelImporter:
     2300126: HallFloorTiles.001
     2300128: HallWallB0TunnelLeft.002
     2300130: HallWallB0Left.002
+    2300132: HallWallF1Left_1.001
+    2300134: HallWallF1Right_2.001
     3300000: HallFloorF1Back
     3300002: HallFloorF1Left
     3300004: HallFloorF1Right
@@ -279,6 +285,8 @@ ModelImporter:
     3300126: HallFloorTiles.001
     3300128: HallWallB0TunnelLeft.002
     3300130: HallWallB0Left.002
+    3300132: HallWallF1Left_1.001
+    3300134: HallWallF1Right_2.001
     4300000: HallWindowRight
     4300002: HallWindowEntrance
     4300004: HallRoofRight
@@ -340,6 +348,8 @@ ModelImporter:
     4300116: HallFloorTiles.001
     4300118: HallWallB0TunnelLeft.002
     4300120: HallWallB0Left.002
+    4300122: HallWallF1Right_2.001
+    4300124: HallWallF1Left_1.001
     6400000: HallFloorF1Back
     6400002: HallFloorF1Left
     6400004: HallFloorF1Right
@@ -406,6 +416,8 @@ ModelImporter:
     6400126: HallFloorTiles.001
     6400128: HallWallB0TunnelLeft.002
     6400130: HallWallB0Left.002
+    6400132: HallWallF1Left_1.001
+    6400134: HallWallF1Right_2.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -446,7 +458,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
