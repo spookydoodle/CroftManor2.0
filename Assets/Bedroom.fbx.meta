@@ -45,6 +45,22 @@ ModelImporter:
     100078: Ceiling_2x2x0.15_proxy
     100080: PARTS
     100082: Window_0.2x2x2_proxy.001
+    100084: BedroomBalconyFloor
+    100086: BedroomBalconyRail
+    100088: BedroomBalconyRail.001
+    100090: BedroomBalconyRail.002
+    100092: BedroomWallHiddenRoom
+    100094: BedroomWallWindow
+    100096: BedroomWallWindow.001
+    100098: BedroomBalcony_6x8x0.5_proxy
+    100100: BedroomHiddenRoom_2x2x2_proxy
+    100102: BedroomWallB0Right.004
+    100104: BedroomWallB0Right.006
+    100106: BedroomWallWhiteWood_0.15x2x1.5_proxy
+    100108: BedroomWallWhiteWood_0.15x2x1_proxy
+    100110: Rail_0.2x1x1_proxy
+    100112: RailCorner_0.2x1x1_proxy
+    100114: Window_0.2x2x3_proxy
     400000: //RootNode
     400002: BedroomFloor
     400004: BedroomFloorStairs
@@ -87,6 +103,22 @@ ModelImporter:
     400078: Ceiling_2x2x0.15_proxy
     400080: PARTS
     400082: Window_0.2x2x2_proxy.001
+    400084: BedroomBalconyFloor
+    400086: BedroomBalconyRail
+    400088: BedroomBalconyRail.001
+    400090: BedroomBalconyRail.002
+    400092: BedroomWallHiddenRoom
+    400094: BedroomWallWindow
+    400096: BedroomWallWindow.001
+    400098: BedroomBalcony_6x8x0.5_proxy
+    400100: BedroomHiddenRoom_2x2x2_proxy
+    400102: BedroomWallB0Right.004
+    400104: BedroomWallB0Right.006
+    400106: BedroomWallWhiteWood_0.15x2x1.5_proxy
+    400108: BedroomWallWhiteWood_0.15x2x1_proxy
+    400110: Rail_0.2x1x1_proxy
+    400112: RailCorner_0.2x1x1_proxy
+    400114: Window_0.2x2x3_proxy
     2100000: WallWhiteWood2
     2100002: White
     2100004: WhiteTransparent
@@ -95,6 +127,10 @@ ModelImporter:
     2100010: Wall
     2100012: TilesRed
     2100014: WhiteWall
+    2100016: WindowGolden
+    2100018: MetalGolden
+    2100020: MetalGolden.001
+    2100022: StoneGrey
     2300000: BedroomFloor
     2300002: BedroomFloorStairs
     2300004: BedroomStairsEntrance
@@ -135,6 +171,22 @@ ModelImporter:
     2300074: BedroomWindowCeiling
     2300076: Ceiling_2x2x0.15_proxy
     2300078: Window_0.2x2x2_proxy.001
+    2300080: BedroomBalconyFloor
+    2300082: BedroomBalconyRail
+    2300084: BedroomBalconyRail.001
+    2300086: BedroomBalconyRail.002
+    2300088: BedroomWallHiddenRoom
+    2300090: BedroomWallWindow
+    2300092: BedroomWallWindow.001
+    2300094: BedroomBalcony_6x8x0.5_proxy
+    2300096: BedroomHiddenRoom_2x2x2_proxy
+    2300098: BedroomWallB0Right.004
+    2300100: BedroomWallB0Right.006
+    2300102: BedroomWallWhiteWood_0.15x2x1.5_proxy
+    2300104: BedroomWallWhiteWood_0.15x2x1_proxy
+    2300106: Rail_0.2x1x1_proxy
+    2300108: RailCorner_0.2x1x1_proxy
+    2300110: Window_0.2x2x3_proxy
     3300000: BedroomFloor
     3300002: BedroomFloorStairs
     3300004: BedroomStairsEntrance
@@ -175,6 +227,22 @@ ModelImporter:
     3300074: BedroomWindowCeiling
     3300076: Ceiling_2x2x0.15_proxy
     3300078: Window_0.2x2x2_proxy.001
+    3300080: BedroomBalconyFloor
+    3300082: BedroomBalconyRail
+    3300084: BedroomBalconyRail.001
+    3300086: BedroomBalconyRail.002
+    3300088: BedroomWallHiddenRoom
+    3300090: BedroomWallWindow
+    3300092: BedroomWallWindow.001
+    3300094: BedroomBalcony_6x8x0.5_proxy
+    3300096: BedroomHiddenRoom_2x2x2_proxy
+    3300098: BedroomWallB0Right.004
+    3300100: BedroomWallB0Right.006
+    3300102: BedroomWallWhiteWood_0.15x2x1.5_proxy
+    3300104: BedroomWallWhiteWood_0.15x2x1_proxy
+    3300106: Rail_0.2x1x1_proxy
+    3300108: RailCorner_0.2x1x1_proxy
+    3300110: Window_0.2x2x3_proxy
     4300000: BedroomWindow.006
     4300002: BedroomWallB1Right.003
     4300004: BedroomWindow.005
@@ -199,6 +267,16 @@ ModelImporter:
     4300042: Ceiling_2x2x0.15_proxy
     4300044: BedroomWallWhiteWood_2x2x1_proxy
     4300046: BedroomStairsEntrance_2x2x0.5_proxy
+    4300048: BedroomWallWindow.001
+    4300050: BedroomWallHiddenRoom
+    4300052: BedroomBalconyRail.002
+    4300054: BedroomBalconyRail.001
+    4300056: BedroomBalconyRail
+    4300058: BedroomBalconyFloor
+    4300060: BedroomWallB0Right.006
+    4300062: BedroomWallB0Right.004
+    4300064: Rail_0.2x1x1_proxy
+    4300066: BedroomWindow.002
     6400000: BedroomFloor
     6400002: BedroomFloorStairs
     6400004: BedroomStairsEntrance
@@ -239,6 +317,22 @@ ModelImporter:
     6400074: BedroomWindowCeiling
     6400076: Ceiling_2x2x0.15_proxy
     6400078: Window_0.2x2x2_proxy.001
+    6400080: BedroomBalconyFloor
+    6400082: BedroomBalconyRail
+    6400084: BedroomBalconyRail.001
+    6400086: BedroomBalconyRail.002
+    6400088: BedroomWallHiddenRoom
+    6400090: BedroomWallWindow
+    6400092: BedroomWallWindow.001
+    6400094: BedroomBalcony_6x8x0.5_proxy
+    6400096: BedroomHiddenRoom_2x2x2_proxy
+    6400098: BedroomWallB0Right.004
+    6400100: BedroomWallB0Right.006
+    6400102: BedroomWallWhiteWood_0.15x2x1.5_proxy
+    6400104: BedroomWallWhiteWood_0.15x2x1_proxy
+    6400106: Rail_0.2x1x1_proxy
+    6400108: RailCorner_0.2x1x1_proxy
+    6400110: Window_0.2x2x3_proxy
   externalObjects: {}
   materials:
     importMaterials: 1
