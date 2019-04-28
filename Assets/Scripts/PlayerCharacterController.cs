@@ -21,12 +21,15 @@ public class PlayerCharacterController : MonoBehaviour {
     // Unity
     CharacterController _controller;
     public Animator anim;
+    private Camera cameraObject;
 
     // Use this for initialization
     void Start()
     {
         _controller = gameObject.GetComponent<CharacterController>();
         anim = gameObject.GetComponent<Animator>();
+        //cameraObject = gameObject.GetComponent<Camera>();
+        cameraObject = Camera.main;   // alternatively
     }
 
     void OnTriggerEnter(Collider other)
@@ -61,8 +64,8 @@ public class PlayerCharacterController : MonoBehaviour {
         Fall();
         
         // Left-Right movement
-        HandleRotation(v, h);
-        
+        HandleRotation(v, h, cameraObject, _controller);
+
         // Front movement
         MoveForward(v, h);
 
@@ -77,17 +80,20 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         // Speed depends on the input with the largest amplitude, i.e.
         // Trigger pushed all the way up or all the way left will result in the same speed
+        //float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
         float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
-        speed.z = moveSpeed * magnitude;
+        speed.z = moveSpeed * magnitude * frontBack;
     }
 
-    void HandleRotation(float frontBack, float leftRight)
+    void HandleRotation(float frontBack, float leftRight, Camera camera, CharacterController butler)
     {
         // Rotation is based on the ratio of frontBack and leftRight inputs
         // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
         // TODO: get a reference to the camera, rotate relative to camera's POV
-        float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
+        float angle = Mathf.Atan2(leftRight, Mathf.Abs(frontBack)) * Mathf.Rad2Deg;
+        Debug.Log(Vector3.Angle(butler.transform.forward, camera.transform.forward));
         rotation.y = angle;
+        
     }
 
     void Jump()
