@@ -88,9 +88,16 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         // Rotation is based on the ratio of frontBack and leftRight inputs
         // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
-        // TODO: get a reference to the camera, rotate relative to camera's POV
         float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
-        rotation.y = angle;
+        bool movingBackwards = frontBack < 0;
+        if (!movingBackwards)
+        {
+            rotation.y = angle;
+        }
+        else
+        {
+            rotation.y = -angle;
+        }
     }
 
     void Jump()
@@ -114,9 +121,12 @@ public class PlayerCharacterController : MonoBehaviour {
 
     void Move()
     {
+        // Only take camera's Y rotation into account
+        Vector3 cameraRotationOffset = new Vector3(0, cameraObject.transform.rotation.eulerAngles.y, 0);
+        transform.rotation = Quaternion.Euler(rotation + cameraRotationOffset);
+
         // Apply movement vectors
         _controller.Move(transform.TransformDirection(speed * Time.deltaTime));
-        transform.Rotate(rotation * rotationSpeed * Time.deltaTime);
     }
 
     // Set parameters used in conditions of transitions in Animator component
