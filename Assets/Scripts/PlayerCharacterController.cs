@@ -28,8 +28,7 @@ public class PlayerCharacterController : MonoBehaviour {
     {
         _controller = gameObject.GetComponent<CharacterController>();
         anim = gameObject.GetComponent<Animator>();
-        //cameraObject = gameObject.GetComponent<Camera>();
-        cameraObject = Camera.main;   // alternatively
+        cameraObject = Camera.main;
     }
 
     void OnTriggerEnter(Collider other)
@@ -82,7 +81,7 @@ public class PlayerCharacterController : MonoBehaviour {
         // Trigger pushed all the way up or all the way left will result in the same speed
         //float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
         float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
-        speed.z = moveSpeed * magnitude * frontBack;
+        speed.z = moveSpeed * magnitude;
     }
 
     void HandleRotation(float frontBack, float leftRight, Camera camera, CharacterController butler)
@@ -90,10 +89,8 @@ public class PlayerCharacterController : MonoBehaviour {
         // Rotation is based on the ratio of frontBack and leftRight inputs
         // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
         // TODO: get a reference to the camera, rotate relative to camera's POV
-        float angle = Mathf.Atan2(leftRight, Mathf.Abs(frontBack)) * Mathf.Rad2Deg;
-        Debug.Log(Vector3.Angle(butler.transform.forward, camera.transform.forward));
+        float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
         rotation.y = angle;
-        
     }
 
     void Jump()
