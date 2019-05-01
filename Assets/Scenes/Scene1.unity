@@ -1504,7 +1504,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 83571f8cb06aa6e4582d09b324b984c9, type: 2}
+  - {fileID: 2100000, guid: 7658933faba4eec45ab4b6cb23529685, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3939,8 +3939,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 50
+  m_Intensity: 0.6
+  m_Range: 70
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -4762,8 +4762,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
-  m_Range: 50
+  m_Intensity: 0.6
+  m_Range: 70
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -4843,14 +4843,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 100056, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100056, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
       propertyPath: m_TagString
       value: Water
@@ -4912,14 +4904,6 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100060, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 100062, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 100064, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5000,6 +4984,22 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100054, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100062, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 100064, guid: fd316e4eb2e82564e95e8deb5c81a4c6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -5160,6 +5160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 240883161}
   invertYaxis: 0
+  speed: 2
 --- !u!4 &1499379386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: fa6fb0a3222fd9e4d93e33ffd45438c3,

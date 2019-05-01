@@ -90,14 +90,15 @@ public class PlayerCharacterController : MonoBehaviour {
         // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
         float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
         bool movingBackwards = frontBack < 0;
-        if (!movingBackwards)
-        {
-            rotation.y = angle;
-        }
-        else
-        {
-            rotation.y = -angle;
-        }
+        rotation.y = angle;
+        //if (!movingBackwards)
+        //{
+        //    rotation.y = angle;
+        //}
+        //else
+        //{
+        //    rotation.y = -angle;
+        //}
     }
 
     void Jump()

@@ -151,6 +151,7 @@ ModelImporter:
     2100014: TileBlackWhite
     2100016: MetalGolden
     2100018: RedCarpet
+    2100020: DarkWood
     2300000: HallFloorF1Back
     2300002: HallFloorF1Left
     2300004: HallFloorF1Right
@@ -418,7 +419,63 @@ ModelImporter:
     6400130: HallWallB0Left.002
     6400132: HallWallF1Left_1.001
     6400134: HallWallF1Right_2.001
-  externalObjects: {}
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkWood
+    second: {fileID: 2100000, guid: f01d2590351e6d94c8d30668a254aeb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FloorWood
+    second: {fileID: 2100000, guid: 16fd99d4b68adb342a42ab421bfbb1a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalGolden
+    second: {fileID: 2100000, guid: f360172995be0724480df72306cccb2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedCarpet
+    second: {fileID: 2100000, guid: cf775c2e546ebf64db9bb4f8592a4280, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TileBlackWhite
+    second: {fileID: 2100000, guid: 91d593bb3d397fa4296fc37f27abe785, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 4eb98f4b1ba4c1342a34a1bd7bb6a9f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhite
+    second: {fileID: 2100000, guid: ce9b87a60d8e40d41a2fe4a7363c32cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhiteWood
+    second: {fileID: 2100000, guid: 448ebb72bece34c4c8da977015d918a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhiteWood2
+    second: {fileID: 2100000, guid: 4e8406717c96f6d47ab6e3950cc72135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: c184834a407848b44b429834e0c2f4fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowGolden
+    second: {fileID: 2100000, guid: f360172995be0724480df72306cccb2d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
