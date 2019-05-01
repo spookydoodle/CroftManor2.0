@@ -60,7 +60,8 @@ public class CameraFollow : MonoBehaviour {
     void Follow()
     {
         float lerp = Time.deltaTime * smoothing;
-        extraRotation = Vector3.Lerp(extraRotation, target.transform.rotation.eulerAngles, lerp);
+        float yAngle = Mathf.LerpAngle(extraRotation.y, target.transform.rotation.eulerAngles.y, lerp);
+        extraRotation.y = yAngle;
     }
 
     void Move()
