@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour {
     
     public GameObject target;  // The position that that camera will be following.
     public bool invertYaxis = false;
+    public float speed = 2.0f;
 
     private PlayerCharacterController playerController;
     private float smoothing = 2f;
@@ -27,7 +28,7 @@ public class CameraFollow : MonoBehaviour {
     {
         float y = Input.GetAxis("Mouse Y");
         float x = Input.GetAxis("Mouse X");
-        HandleRotation(setInvYax * y * Settings.MouseSensitivity(), x * Settings.MouseSensitivity());
+        HandleRotation(setInvYax * y * Settings.MouseSensitivity() * speed, x * Settings.MouseSensitivity() * speed);
 
         if (this.shouldFollow())
         {

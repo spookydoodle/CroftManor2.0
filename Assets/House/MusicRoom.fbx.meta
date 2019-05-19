@@ -45,6 +45,27 @@ ModelImporter:
     100078: MusicRoomWallWindow.001
     100080: MusicRoomWallWindow.002
     100082: MusicRoomWallWindow.003
+    100084: Ceiling_2x2x0.15_proxy
+    100086: FloorTileWood_2x2x0.05_proxy
+    100088: HallWall_0.15x1.85x1_proxy
+    100090: HallWall_0.15x1.85x2_proxy
+    100092: HallWall_0.15x2x0.5_proxy
+    100094: HallWall_0.15x2x1_proxy
+    100096: HallWall_0.15x2x2.5_proxy
+    100098: HallWall_0.15x2x2_proxy
+    100100: HallWall_2x2x1.5_proxy
+    100102: HallWall_2x2x2.5_proxy
+    100104: HallWallWhite_0.15x1.85x2.5_proxy
+    100106: HallWallWhite_0.15x2x2.5_proxy
+    100108: HallWallWhite_0.15x2x2.5_proxy.001
+    100110: HallWallWhite_0.15x2x2_proxy
+    100112: Lamp
+    100114: Lamp.001
+    100116: MusicRoomStairs_6x2x1.5_proxy
+    100118: MusicRoomWallWindow_2x8x5.5_proxy
+    100120: PARTS
+    100122: Sun
+    100124: Window_0.2x4x4_proxy
     400000: //RootNode
     400002: MusicRoomFloorB0
     400004: MusicRoomStairs
@@ -87,12 +108,35 @@ ModelImporter:
     400078: MusicRoomWallWindow.001
     400080: MusicRoomWallWindow.002
     400082: MusicRoomWallWindow.003
+    400084: Ceiling_2x2x0.15_proxy
+    400086: FloorTileWood_2x2x0.05_proxy
+    400088: HallWall_0.15x1.85x1_proxy
+    400090: HallWall_0.15x1.85x2_proxy
+    400092: HallWall_0.15x2x0.5_proxy
+    400094: HallWall_0.15x2x1_proxy
+    400096: HallWall_0.15x2x2.5_proxy
+    400098: HallWall_0.15x2x2_proxy
+    400100: HallWall_2x2x1.5_proxy
+    400102: HallWall_2x2x2.5_proxy
+    400104: HallWallWhite_0.15x1.85x2.5_proxy
+    400106: HallWallWhite_0.15x2x2.5_proxy
+    400108: HallWallWhite_0.15x2x2.5_proxy.001
+    400110: HallWallWhite_0.15x2x2_proxy
+    400112: Lamp
+    400114: Lamp.001
+    400116: MusicRoomStairs_6x2x1.5_proxy
+    400118: MusicRoomWallWindow_2x8x5.5_proxy
+    400120: PARTS
+    400122: Sun
+    400124: Window_0.2x4x4_proxy
     2100000: WhiteWall
     2100002: Wall
     2100004: WindowGolden
     2100006: WallWhiteWood2
     2100008: WallWhite
     2100010: FloorWood
+    2100012: Material
+    2100014: WallWhiteWood
     2300000: MusicRoomFloorB0
     2300002: MusicRoomStairs
     2300004: MusicRoomWallB0Back
@@ -134,6 +178,23 @@ ModelImporter:
     2300076: MusicRoomWallWindow.001
     2300078: MusicRoomWallWindow.002
     2300080: MusicRoomWallWindow.003
+    2300082: Ceiling_2x2x0.15_proxy
+    2300084: FloorTileWood_2x2x0.05_proxy
+    2300086: HallWall_0.15x1.85x1_proxy
+    2300088: HallWall_0.15x1.85x2_proxy
+    2300090: HallWall_0.15x2x0.5_proxy
+    2300092: HallWall_0.15x2x1_proxy
+    2300094: HallWall_0.15x2x2.5_proxy
+    2300096: HallWall_0.15x2x2_proxy
+    2300098: HallWall_2x2x1.5_proxy
+    2300100: HallWall_2x2x2.5_proxy
+    2300102: HallWallWhite_0.15x1.85x2.5_proxy
+    2300104: HallWallWhite_0.15x2x2.5_proxy
+    2300106: HallWallWhite_0.15x2x2.5_proxy.001
+    2300108: HallWallWhite_0.15x2x2_proxy
+    2300110: MusicRoomStairs_6x2x1.5_proxy
+    2300112: MusicRoomWallWindow_2x8x5.5_proxy
+    2300114: Window_0.2x4x4_proxy
     3300000: MusicRoomFloorB0
     3300002: MusicRoomStairs
     3300004: MusicRoomWallB0Back
@@ -175,6 +236,23 @@ ModelImporter:
     3300076: MusicRoomWallWindow.001
     3300078: MusicRoomWallWindow.002
     3300080: MusicRoomWallWindow.003
+    3300082: Ceiling_2x2x0.15_proxy
+    3300084: FloorTileWood_2x2x0.05_proxy
+    3300086: HallWall_0.15x1.85x1_proxy
+    3300088: HallWall_0.15x1.85x2_proxy
+    3300090: HallWall_0.15x2x0.5_proxy
+    3300092: HallWall_0.15x2x1_proxy
+    3300094: HallWall_0.15x2x2.5_proxy
+    3300096: HallWall_0.15x2x2_proxy
+    3300098: HallWall_2x2x1.5_proxy
+    3300100: HallWall_2x2x2.5_proxy
+    3300102: HallWallWhite_0.15x1.85x2.5_proxy
+    3300104: HallWallWhite_0.15x2x2.5_proxy
+    3300106: HallWallWhite_0.15x2x2.5_proxy.001
+    3300108: HallWallWhite_0.15x2x2_proxy
+    3300110: MusicRoomStairs_6x2x1.5_proxy
+    3300112: MusicRoomWallWindow_2x8x5.5_proxy
+    3300114: Window_0.2x4x4_proxy
     4300000: MusicRoomWallB0Back.010
     4300002: MusicRoomWallB0Back.009
     4300004: MusicRoomWallB0Back.008
@@ -212,6 +290,16 @@ ModelImporter:
     4300068: MusicRoomFloorB0
     4300070: MusicRoomWallB0Left.007
     4300072: MusicRoomWallB0Right.002
+    4300074: Ceiling_2x2x0.15_proxy
+    4300076: HallWallWhite_0.15x1.85x2.5_proxy
+    4300078: HallWallWhite_0.15x2x2_proxy
+    4300080: FloorTileWood_2x2x0.05_proxy
+    4300082: HallWall_0.15x2x2.5_proxy
+    4300084: HallWall_2x2x1.5_proxy
+    4300086: HallWall_0.15x2x2_proxy
+    4300088: HallWall_0.15x1.85x2_proxy
+    4300090: HallWall_0.15x1.85x1_proxy
+    4300092: HallWall_0.15x2x1_proxy
     6400000: MusicRoomFloorB0
     6400002: MusicRoomStairs
     6400004: MusicRoomWallB0Back
@@ -253,6 +341,26 @@ ModelImporter:
     6400076: MusicRoomWallWindow.001
     6400078: MusicRoomWallWindow.002
     6400080: MusicRoomWallWindow.003
+    6400082: Ceiling_2x2x0.15_proxy
+    6400084: FloorTileWood_2x2x0.05_proxy
+    6400086: HallWall_0.15x1.85x1_proxy
+    6400088: HallWall_0.15x1.85x2_proxy
+    6400090: HallWall_0.15x2x0.5_proxy
+    6400092: HallWall_0.15x2x1_proxy
+    6400094: HallWall_0.15x2x2.5_proxy
+    6400096: HallWall_0.15x2x2_proxy
+    6400098: HallWall_2x2x1.5_proxy
+    6400100: HallWall_2x2x2.5_proxy
+    6400102: HallWallWhite_0.15x1.85x2.5_proxy
+    6400104: HallWallWhite_0.15x2x2.5_proxy
+    6400106: HallWallWhite_0.15x2x2.5_proxy.001
+    6400108: HallWallWhite_0.15x2x2_proxy
+    6400110: MusicRoomStairs_6x2x1.5_proxy
+    6400112: MusicRoomWallWindow_2x8x5.5_proxy
+    6400114: Window_0.2x4x4_proxy
+    10800000: Lamp
+    10800002: Lamp.001
+    10800004: Sun
   externalObjects: {}
   materials:
     importMaterials: 1

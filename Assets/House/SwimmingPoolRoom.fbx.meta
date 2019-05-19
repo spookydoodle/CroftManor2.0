@@ -60,6 +60,10 @@ ModelImporter:
     100108: SwimmingPoolRoomWallB1Back.005
     100110: SwimmingPoolRoomWallB1Front.002
     100112: SwimmingPoolRoomWallB1Front.003
+    100114: SwimmingPoolRoomWallLeftBt.003
+    100116: SwimmingPoolRoomWallRightBt.003
+    100118: SwimmingPoolRoomWallRightBt.004
+    100120: SwimmingPoolRoomCeiling
     400000: SwimmingPool
     400002: //RootNode
     400004: SwimmingPoolRoomColumn
@@ -117,6 +121,10 @@ ModelImporter:
     400108: SwimmingPoolRoomWallB1Back.005
     400110: SwimmingPoolRoomWallB1Front.002
     400112: SwimmingPoolRoomWallB1Front.003
+    400114: SwimmingPoolRoomWallLeftBt.003
+    400116: SwimmingPoolRoomWallRightBt.003
+    400118: SwimmingPoolRoomWallRightBt.004
+    400120: SwimmingPoolRoomCeiling
     2000000: Camera
     2100000: MosaicBoat
     2100002: PoolTilesBrown1
@@ -177,6 +185,10 @@ ModelImporter:
     2300092: SwimmingPoolRoomWallB1Back.005
     2300094: SwimmingPoolRoomWallB1Front.002
     2300096: SwimmingPoolRoomWallB1Front.003
+    2300098: SwimmingPoolRoomWallLeftBt.003
+    2300100: SwimmingPoolRoomWallRightBt.003
+    2300102: SwimmingPoolRoomWallRightBt.004
+    2300104: SwimmingPoolRoomCeiling
     3300000: SwimmingPool
     3300002: SwimmingPoolRoomColumn
     3300004: SwimmingPoolRoomColumn.001
@@ -226,6 +238,10 @@ ModelImporter:
     3300092: SwimmingPoolRoomWallB1Back.005
     3300094: SwimmingPoolRoomWallB1Front.002
     3300096: SwimmingPoolRoomWallB1Front.003
+    3300098: SwimmingPoolRoomWallLeftBt.003
+    3300100: SwimmingPoolRoomWallRightBt.003
+    3300102: SwimmingPoolRoomWallRightBt.004
+    3300104: SwimmingPoolRoomCeiling
     4300000: SwimmingPoolRoomColumn.001
     4300002: SwimmingPoolRoomColumn
     4300004: SwimmingPoolRoomWallRightBt.002
@@ -255,6 +271,10 @@ ModelImporter:
     4300052: SwimmingPoolRoomWallB1Front.003
     4300054: SwimmingPoolRoomWallB1Front.002
     4300056: SwimmingPoolRoomWallB1Back.005
+    4300058: SwimmingPoolRoomWallRightBt.004
+    4300060: SwimmingPoolRoomWallRightBt.003
+    4300062: SwimmingPoolRoomCeiling
+    4300064: SwimmingPoolRoomWallB1Back.002
     6400000: SwimmingPool
     6400002: SwimmingPoolRoomColumn
     6400004: SwimmingPoolRoomColumn.001
@@ -304,6 +324,10 @@ ModelImporter:
     6400092: SwimmingPoolRoomWallB1Back.005
     6400094: SwimmingPoolRoomWallB1Front.002
     6400096: SwimmingPoolRoomWallB1Front.003
+    6400098: SwimmingPoolRoomWallLeftBt.003
+    6400100: SwimmingPoolRoomWallRightBt.003
+    6400102: SwimmingPoolRoomWallRightBt.004
+    6400104: SwimmingPoolRoomCeiling
     10800000: Lamp
     10800002: Lamp.001
     10800004: Point

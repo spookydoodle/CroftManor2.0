@@ -21,7 +21,8 @@ public class OpenDoor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bool key = Input.GetKeyDown(KeyCode.E);
+        //bool key = Input.GetKeyDown(KeyCode.E);
+        bool key = Input.GetButtonDown("Interact");
         bool isWithinRadius = checkDistance(gameObject.transform.position, player.transform.position);
 
         //Animating(key, isWithinRadius);

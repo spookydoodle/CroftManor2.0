@@ -38,17 +38,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Cloth
-    second: {fileID: 2100000, guid: 83571f8cb06aa6e4582d09b324b984c9, type: 2}
+    second: {fileID: 2100000, guid: 7658933faba4eec45ab4b6cb23529685, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Head
-    second: {fileID: 2100000, guid: 2fba25b0b073f5346b357b64013dd62c, type: 2}
+    second: {fileID: 2100000, guid: 2160789d8daf1ce489bd0343486d8609, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Neck
-    second: {fileID: 2100000, guid: d1b53f1f8851a914b87fc6699a8e72af, type: 2}
+    second: {fileID: 2100000, guid: 75858504c52084f43b07f145836eef4c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
