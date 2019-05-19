@@ -22,6 +22,7 @@ public class PlayerCharacterController : MonoBehaviour {
     CharacterController _controller;
     public Animator anim;
     private Camera cameraObject;
+    public BulletSourceController bulletSourceController;
 
     // Use this for initialization
     void Start()
@@ -52,7 +53,7 @@ public class PlayerCharacterController : MonoBehaviour {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         bool j = Input.GetButtonDown("Jump");
-        
+        bool f = Input.GetButton("Fire1");
 
         // Up-Down movement
         if (j)
@@ -70,6 +71,11 @@ public class PlayerCharacterController : MonoBehaviour {
 
         // Apply computed movement
         Move();
+
+        // Shoot
+        if (f) {
+            this.bulletSourceController.Shoot();
+        }
 
         // Set animations for movement
         Animating(v, h);
