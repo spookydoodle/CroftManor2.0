@@ -72,6 +72,54 @@ ModelImporter:
     100132: HallWallB0Left.002
     100134: HallWallF1Left_1.001
     100136: HallWallF1Right_2.001
+    100138: FloorTileWood_2x2x0.05_proxy
+    100140: HallFloor
+    100142: HallFloorTile_2x2x0.25_proxy
+    100144: HallRoofTile_2x2x0.15_angle_proxy
+    100146: HallRoofTileReversed_2x2x0.15_angle_proxy
+    100148: HallStairs
+    100150: HallWall_0.15x1.85x1_proxy
+    100152: HallWall_0.15x1.85x2_proxy
+    100154: HallWall_0.15x2x0.5_proxy
+    100156: HallWall_0.15x2x1_proxy
+    100158: HallWall_0.15x2x2.5_proxy
+    100160: HallWall_0.15x2x2_proxy
+    100162: HallWall_2x2x1.5_proxy
+    100164: HallWall_2x2x2.5_proxy
+    100166: HallWallBreak_2x6x2.5_proxy
+    100168: HallWallBreakClosed_2x6x2.5_proxy
+    100170: HallWallEntrance_2x8x5_proxy
+    100172: HallWallReversed_0.15x2x1_proxy
+    100174: HallWallRooftopBack_0.15x24x2_proxy
+    100176: HallWallRooftopFrontLeft_0.15x8x2_proxy
+    100178: HallWallRooftopFrontRight_0.15x8x2_proxy
+    100180: HallWalls
+    100182: HallWallTunnelLeft_2x10x2.5_proxy
+    100184: HallWallTunnelLeft_2x10x3_proxy
+    100186: HallWallTunnelRight_2x10x2.5_proxy
+    100188: HallWallTunnelRight_2x10x3_proxy
+    100190: HallWallTunnelRight_WDoors_2x10x2.5_proxy
+    100192: HallWallTunnelRight_WDoors_2x10x3_proxy
+    100194: HallWallWhite_0.15x1.85x2.5_proxy
+    100196: HallWallWhite_0.15x2x2.5_proxy
+    100198: HallWallWhite_0.15x2x2_proxy
+    100200: HallWallWindow_2x6x5_proxy
+    100202: HallWallWindowEntrance_2x8x5_proxy
+    100204: Lamp
+    100206: Lamp.001
+    100208: PARTS
+    100210: Point
+    100212: Rail_0.2x1x1_proxy
+    100214: RailingPost_0.2x0.2x1_proxy
+    100216: Roof
+    100218: Stairs_1x2x0.25_10_proxy
+    100220: StairsLeft_10x4x2.2_7_proxy
+    100222: StairsRail_0.2x1x1_proxy
+    100224: StairsRight_10x4x2.2_7_proxy
+    100226: Sun
+    100228: Window_0.2x2x2_proxy
+    100230: Window_0.2x4x4_proxy
+    100232: Windows
     400000: HallFloorF1Back
     400002: HallFloorF1Left
     400004: HallFloorF1Right
@@ -141,6 +189,54 @@ ModelImporter:
     400132: HallWallB0Left.002
     400134: HallWallF1Left_1.001
     400136: HallWallF1Right_2.001
+    400138: FloorTileWood_2x2x0.05_proxy
+    400140: HallFloor
+    400142: HallFloorTile_2x2x0.25_proxy
+    400144: HallRoofTile_2x2x0.15_angle_proxy
+    400146: HallRoofTileReversed_2x2x0.15_angle_proxy
+    400148: HallStairs
+    400150: HallWall_0.15x1.85x1_proxy
+    400152: HallWall_0.15x1.85x2_proxy
+    400154: HallWall_0.15x2x0.5_proxy
+    400156: HallWall_0.15x2x1_proxy
+    400158: HallWall_0.15x2x2.5_proxy
+    400160: HallWall_0.15x2x2_proxy
+    400162: HallWall_2x2x1.5_proxy
+    400164: HallWall_2x2x2.5_proxy
+    400166: HallWallBreak_2x6x2.5_proxy
+    400168: HallWallBreakClosed_2x6x2.5_proxy
+    400170: HallWallEntrance_2x8x5_proxy
+    400172: HallWallReversed_0.15x2x1_proxy
+    400174: HallWallRooftopBack_0.15x24x2_proxy
+    400176: HallWallRooftopFrontLeft_0.15x8x2_proxy
+    400178: HallWallRooftopFrontRight_0.15x8x2_proxy
+    400180: HallWalls
+    400182: HallWallTunnelLeft_2x10x2.5_proxy
+    400184: HallWallTunnelLeft_2x10x3_proxy
+    400186: HallWallTunnelRight_2x10x2.5_proxy
+    400188: HallWallTunnelRight_2x10x3_proxy
+    400190: HallWallTunnelRight_WDoors_2x10x2.5_proxy
+    400192: HallWallTunnelRight_WDoors_2x10x3_proxy
+    400194: HallWallWhite_0.15x1.85x2.5_proxy
+    400196: HallWallWhite_0.15x2x2.5_proxy
+    400198: HallWallWhite_0.15x2x2_proxy
+    400200: HallWallWindow_2x6x5_proxy
+    400202: HallWallWindowEntrance_2x8x5_proxy
+    400204: Lamp
+    400206: Lamp.001
+    400208: PARTS
+    400210: Point
+    400212: Rail_0.2x1x1_proxy
+    400214: RailingPost_0.2x0.2x1_proxy
+    400216: Roof
+    400218: Stairs_1x2x0.25_10_proxy
+    400220: StairsLeft_10x4x2.2_7_proxy
+    400222: StairsRail_0.2x1x1_proxy
+    400224: StairsRight_10x4x2.2_7_proxy
+    400226: Sun
+    400228: Window_0.2x2x2_proxy
+    400230: Window_0.2x4x4_proxy
+    400232: Windows
     2100000: WindowGolden
     2100002: WallWhiteWood2
     2100004: Wall
@@ -152,6 +248,7 @@ ModelImporter:
     2100016: MetalGolden
     2100018: RedCarpet
     2100020: DarkWood
+    2100022: Material
     2300000: HallFloorF1Back
     2300002: HallFloorF1Left
     2300004: HallFloorF1Right
@@ -220,6 +317,44 @@ ModelImporter:
     2300130: HallWallB0Left.002
     2300132: HallWallF1Left_1.001
     2300134: HallWallF1Right_2.001
+    2300136: FloorTileWood_2x2x0.05_proxy
+    2300138: HallFloorTile_2x2x0.25_proxy
+    2300140: HallRoofTile_2x2x0.15_angle_proxy
+    2300142: HallRoofTileReversed_2x2x0.15_angle_proxy
+    2300144: HallWall_0.15x1.85x1_proxy
+    2300146: HallWall_0.15x1.85x2_proxy
+    2300148: HallWall_0.15x2x0.5_proxy
+    2300150: HallWall_0.15x2x1_proxy
+    2300152: HallWall_0.15x2x2.5_proxy
+    2300154: HallWall_0.15x2x2_proxy
+    2300156: HallWall_2x2x1.5_proxy
+    2300158: HallWall_2x2x2.5_proxy
+    2300160: HallWallBreak_2x6x2.5_proxy
+    2300162: HallWallBreakClosed_2x6x2.5_proxy
+    2300164: HallWallEntrance_2x8x5_proxy
+    2300166: HallWallReversed_0.15x2x1_proxy
+    2300168: HallWallRooftopBack_0.15x24x2_proxy
+    2300170: HallWallRooftopFrontLeft_0.15x8x2_proxy
+    2300172: HallWallRooftopFrontRight_0.15x8x2_proxy
+    2300174: HallWallTunnelLeft_2x10x2.5_proxy
+    2300176: HallWallTunnelLeft_2x10x3_proxy
+    2300178: HallWallTunnelRight_2x10x2.5_proxy
+    2300180: HallWallTunnelRight_2x10x3_proxy
+    2300182: HallWallTunnelRight_WDoors_2x10x2.5_proxy
+    2300184: HallWallTunnelRight_WDoors_2x10x3_proxy
+    2300186: HallWallWhite_0.15x1.85x2.5_proxy
+    2300188: HallWallWhite_0.15x2x2.5_proxy
+    2300190: HallWallWhite_0.15x2x2_proxy
+    2300192: HallWallWindow_2x6x5_proxy
+    2300194: HallWallWindowEntrance_2x8x5_proxy
+    2300196: Rail_0.2x1x1_proxy
+    2300198: RailingPost_0.2x0.2x1_proxy
+    2300200: Stairs_1x2x0.25_10_proxy
+    2300202: StairsLeft_10x4x2.2_7_proxy
+    2300204: StairsRail_0.2x1x1_proxy
+    2300206: StairsRight_10x4x2.2_7_proxy
+    2300208: Window_0.2x2x2_proxy
+    2300210: Window_0.2x4x4_proxy
     3300000: HallFloorF1Back
     3300002: HallFloorF1Left
     3300004: HallFloorF1Right
@@ -288,6 +423,44 @@ ModelImporter:
     3300130: HallWallB0Left.002
     3300132: HallWallF1Left_1.001
     3300134: HallWallF1Right_2.001
+    3300136: FloorTileWood_2x2x0.05_proxy
+    3300138: HallFloorTile_2x2x0.25_proxy
+    3300140: HallRoofTile_2x2x0.15_angle_proxy
+    3300142: HallRoofTileReversed_2x2x0.15_angle_proxy
+    3300144: HallWall_0.15x1.85x1_proxy
+    3300146: HallWall_0.15x1.85x2_proxy
+    3300148: HallWall_0.15x2x0.5_proxy
+    3300150: HallWall_0.15x2x1_proxy
+    3300152: HallWall_0.15x2x2.5_proxy
+    3300154: HallWall_0.15x2x2_proxy
+    3300156: HallWall_2x2x1.5_proxy
+    3300158: HallWall_2x2x2.5_proxy
+    3300160: HallWallBreak_2x6x2.5_proxy
+    3300162: HallWallBreakClosed_2x6x2.5_proxy
+    3300164: HallWallEntrance_2x8x5_proxy
+    3300166: HallWallReversed_0.15x2x1_proxy
+    3300168: HallWallRooftopBack_0.15x24x2_proxy
+    3300170: HallWallRooftopFrontLeft_0.15x8x2_proxy
+    3300172: HallWallRooftopFrontRight_0.15x8x2_proxy
+    3300174: HallWallTunnelLeft_2x10x2.5_proxy
+    3300176: HallWallTunnelLeft_2x10x3_proxy
+    3300178: HallWallTunnelRight_2x10x2.5_proxy
+    3300180: HallWallTunnelRight_2x10x3_proxy
+    3300182: HallWallTunnelRight_WDoors_2x10x2.5_proxy
+    3300184: HallWallTunnelRight_WDoors_2x10x3_proxy
+    3300186: HallWallWhite_0.15x1.85x2.5_proxy
+    3300188: HallWallWhite_0.15x2x2.5_proxy
+    3300190: HallWallWhite_0.15x2x2_proxy
+    3300192: HallWallWindow_2x6x5_proxy
+    3300194: HallWallWindowEntrance_2x8x5_proxy
+    3300196: Rail_0.2x1x1_proxy
+    3300198: RailingPost_0.2x0.2x1_proxy
+    3300200: Stairs_1x2x0.25_10_proxy
+    3300202: StairsLeft_10x4x2.2_7_proxy
+    3300204: StairsRail_0.2x1x1_proxy
+    3300206: StairsRight_10x4x2.2_7_proxy
+    3300208: Window_0.2x2x2_proxy
+    3300210: Window_0.2x4x4_proxy
     4300000: HallWindowRight
     4300002: HallWindowEntrance
     4300004: HallRoofRight
@@ -351,6 +524,42 @@ ModelImporter:
     4300120: HallWallB0Left.002
     4300122: HallWallF1Right_2.001
     4300124: HallWallF1Left_1.001
+    4300126: HallWallWhite_0.15x1.85x2.5_proxy
+    4300128: HallWallWhite_0.15x2x2.5_proxy
+    4300130: HallWallTunnelLeft_2x10x3_proxy
+    4300132: HallWallReversed_0.15x2x1_proxy
+    4300134: HallRoofTileReversed_2x2x0.15_angle_proxy
+    4300136: HallWallWhite_0.15x2x2_proxy
+    4300138: RailingPost_0.2x0.2x1_proxy
+    4300140: Rail_0.2x1x1_proxy
+    4300142: StairsRail_0.2x1x1_proxy
+    4300144: StairsLeft_10x4x2.2_7_proxy
+    4300146: StairsRight_10x4x2.2_7_proxy
+    4300148: FloorTileWood_2x2x0.05_proxy
+    4300150: HallWallEntrance_2x8x5_proxy
+    4300152: HallWallWindow_2x6x5_proxy
+    4300154: HallWallTunnelRight_WDoors_2x10x3_proxy
+    4300156: HallWall_0.15x2x0.5_proxy
+    4300158: HallWall_0.15x2x2.5_proxy
+    4300160: HallWallTunnelRight_2x10x3_proxy
+    4300162: HallWallBreak_2x6x2.5_proxy
+    4300164: HallWallBreakClosed_2x6x2.5_proxy
+    4300166: HallWall_2x2x1.5_proxy
+    4300168: HallWallWindowEntrance_2x8x5_proxy
+    4300170: HallRoofTile_2x2x0.15_angle_proxy
+    4300172: HallWallRooftopFrontRight_0.15x8x2_proxy
+    4300174: HallWallRooftopFrontLeft_0.15x8x2_proxy
+    4300176: Stairs_1x2x0.25_10_proxy
+    4300178: HallWallTunnelLeft_2x10x2.5_proxy
+    4300180: HallWallTunnelRight_2x10x2.5_proxy
+    4300182: HallWallTunnelRight_WDoors_2x10x2.5_proxy
+    4300184: HallWall_0.15x2x2_proxy
+    4300186: HallWall_0.15x1.85x2_proxy
+    4300188: HallWall_2x2x2.5_proxy
+    4300190: HallFloorTile_2x2x0.25_proxy
+    4300192: HallWall_0.15x1.85x1_proxy
+    4300194: HallWallRooftopBack_0.15x24x2_proxy
+    4300196: HallWall_0.15x2x1_proxy
     6400000: HallFloorF1Back
     6400002: HallFloorF1Left
     6400004: HallFloorF1Right
@@ -419,6 +628,48 @@ ModelImporter:
     6400130: HallWallB0Left.002
     6400132: HallWallF1Left_1.001
     6400134: HallWallF1Right_2.001
+    6400136: FloorTileWood_2x2x0.05_proxy
+    6400138: HallFloorTile_2x2x0.25_proxy
+    6400140: HallRoofTile_2x2x0.15_angle_proxy
+    6400142: HallRoofTileReversed_2x2x0.15_angle_proxy
+    6400144: HallWall_0.15x1.85x1_proxy
+    6400146: HallWall_0.15x1.85x2_proxy
+    6400148: HallWall_0.15x2x0.5_proxy
+    6400150: HallWall_0.15x2x1_proxy
+    6400152: HallWall_0.15x2x2.5_proxy
+    6400154: HallWall_0.15x2x2_proxy
+    6400156: HallWall_2x2x1.5_proxy
+    6400158: HallWall_2x2x2.5_proxy
+    6400160: HallWallBreak_2x6x2.5_proxy
+    6400162: HallWallBreakClosed_2x6x2.5_proxy
+    6400164: HallWallEntrance_2x8x5_proxy
+    6400166: HallWallReversed_0.15x2x1_proxy
+    6400168: HallWallRooftopBack_0.15x24x2_proxy
+    6400170: HallWallRooftopFrontLeft_0.15x8x2_proxy
+    6400172: HallWallRooftopFrontRight_0.15x8x2_proxy
+    6400174: HallWallTunnelLeft_2x10x2.5_proxy
+    6400176: HallWallTunnelLeft_2x10x3_proxy
+    6400178: HallWallTunnelRight_2x10x2.5_proxy
+    6400180: HallWallTunnelRight_2x10x3_proxy
+    6400182: HallWallTunnelRight_WDoors_2x10x2.5_proxy
+    6400184: HallWallTunnelRight_WDoors_2x10x3_proxy
+    6400186: HallWallWhite_0.15x1.85x2.5_proxy
+    6400188: HallWallWhite_0.15x2x2.5_proxy
+    6400190: HallWallWhite_0.15x2x2_proxy
+    6400192: HallWallWindow_2x6x5_proxy
+    6400194: HallWallWindowEntrance_2x8x5_proxy
+    6400196: Rail_0.2x1x1_proxy
+    6400198: RailingPost_0.2x0.2x1_proxy
+    6400200: Stairs_1x2x0.25_10_proxy
+    6400202: StairsLeft_10x4x2.2_7_proxy
+    6400204: StairsRail_0.2x1x1_proxy
+    6400206: StairsRight_10x4x2.2_7_proxy
+    6400208: Window_0.2x2x2_proxy
+    6400210: Window_0.2x4x4_proxy
+    10800000: Lamp
+    10800002: Lamp.001
+    10800004: Point
+    10800006: Sun
     2186277476908879412: ImportLogs
   externalObjects:
   - first:

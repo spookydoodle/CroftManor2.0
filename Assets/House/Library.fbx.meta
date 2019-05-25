@@ -33,6 +33,15 @@ ModelImporter:
     100054: LibraryWallB1Right.006
     100056: LibraryWallB1Right.007
     100058: LibraryWallB1Right.008
+    100060: LibraryWallB0Back
+    100062: LibraryWallB0Back.001
+    100064: LibraryWallB0BackWindow
+    100066: LibraryWallB0LeftFirePlace
+    100068: LibraryWallB1Back
+    100070: LibraryWallB1Back.001
+    100072: LibraryWallB1Back.002
+    100074: LibraryWallB1Back.003
+    100076: LibraryWindow
     400000: //RootNode
     400002: LibraryCeiling
     400004: LibraryFloor
@@ -63,6 +72,15 @@ ModelImporter:
     400054: LibraryWallB1Right.006
     400056: LibraryWallB1Right.007
     400058: LibraryWallB1Right.008
+    400060: LibraryWallB0Back
+    400062: LibraryWallB0Back.001
+    400064: LibraryWallB0BackWindow
+    400066: LibraryWallB0LeftFirePlace
+    400068: LibraryWallB1Back
+    400070: LibraryWallB1Back.001
+    400072: LibraryWallB1Back.002
+    400074: LibraryWallB1Back.003
+    400076: LibraryWindow
     2100000: Wall
     2100002: WallWhiteFull
     2100004: TilesRed
@@ -100,6 +118,15 @@ ModelImporter:
     2300052: LibraryWallB1Right.006
     2300054: LibraryWallB1Right.007
     2300056: LibraryWallB1Right.008
+    2300058: LibraryWallB0Back
+    2300060: LibraryWallB0Back.001
+    2300062: LibraryWallB0BackWindow
+    2300064: LibraryWallB0LeftFirePlace
+    2300066: LibraryWallB1Back
+    2300068: LibraryWallB1Back.001
+    2300070: LibraryWallB1Back.002
+    2300072: LibraryWallB1Back.003
+    2300074: LibraryWindow
     3300000: LibraryCeiling
     3300002: LibraryFloor
     3300004: LibraryFloor.001
@@ -129,6 +156,15 @@ ModelImporter:
     3300052: LibraryWallB1Right.006
     3300054: LibraryWallB1Right.007
     3300056: LibraryWallB1Right.008
+    3300058: LibraryWallB0Back
+    3300060: LibraryWallB0Back.001
+    3300062: LibraryWallB0BackWindow
+    3300064: LibraryWallB0LeftFirePlace
+    3300066: LibraryWallB1Back
+    3300068: LibraryWallB1Back.001
+    3300070: LibraryWallB1Back.002
+    3300072: LibraryWallB1Back.003
+    3300074: LibraryWindow
     4300000: LibraryWallB0Left.002
     4300002: LibraryWallB0Right.006
     4300004: LibraryWallB0Right.003
@@ -151,6 +187,13 @@ ModelImporter:
     4300038: LibraryWallB0Front.001
     4300040: LibraryWallB0Front
     4300042: LibraryStairs
+    4300044: LibraryWallB0LeftFirePlace
+    4300046: LibraryWindow
+    4300048: LibraryWallB0BackWindow
+    4300050: LibraryWallB1Back.003
+    4300052: LibraryWallB0Back
+    4300054: LibraryWallB0Back.001
+    4300056: LibraryWallB1Back.001
     6400000: LibraryCeiling
     6400002: LibraryFloor
     6400004: LibraryFloor.001
@@ -180,6 +223,15 @@ ModelImporter:
     6400052: LibraryWallB1Right.006
     6400054: LibraryWallB1Right.007
     6400056: LibraryWallB1Right.008
+    6400058: LibraryWallB0Back
+    6400060: LibraryWallB0Back.001
+    6400062: LibraryWallB0BackWindow
+    6400064: LibraryWallB0LeftFirePlace
+    6400066: LibraryWallB1Back
+    6400068: LibraryWallB1Back.001
+    6400070: LibraryWallB1Back.002
+    6400072: LibraryWallB1Back.003
+    6400074: LibraryWindow
   externalObjects: {}
   materials:
     importMaterials: 1
