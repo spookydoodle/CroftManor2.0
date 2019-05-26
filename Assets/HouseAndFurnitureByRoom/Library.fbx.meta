@@ -42,6 +42,33 @@ ModelImporter:
     100072: LibraryWallB1Back.002
     100074: LibraryWallB1Back.003
     100076: LibraryWindow
+    100078: Ceiling_2x2x0.15_proxy
+    100080: FloorRedCarpet_2x2x0.05_proxy
+    100082: FloorTileWood_2x2x0.05_proxy
+    100084: HallWall_0.15x1.85x1_proxy
+    100086: HallWall_0.15x1.85x2_proxy
+    100088: HallWall_0.15x2x0.5_proxy
+    100090: HallWall_0.15x2x1_proxy
+    100092: HallWall_0.15x2x2.5_proxy
+    100094: HallWall_0.15x2x2_proxy
+    100096: HallWall_2x2x1.5_proxy
+    100098: HallWall_2x2x2.5_proxy
+    100100: HallWallWhite_0.15x1.85x2.5_proxy
+    100102: HallWallWhite_0.15x2x2.5_proxy
+    100104: HallWallWhite_0.15x2x2.5_proxy.001
+    100106: HallWallWhite_0.15x2x2_proxy
+    100108: Lamp
+    100110: Lamp.001
+    100112: LibraryStairs_4x6x2.5_proxy
+    100114: LibraryWallFire_2x6x3_proxy
+    100116: LibraryWallWindow_2x4x3_proxy
+    100118: MusicRoomStairs_6x2x1.5_proxy
+    100120: MusicRoomWallWindow_2x8x5.5_proxy
+    100122: PARTS
+    100124: Sun
+    100126: Window_0.2x2x2.5_proxy
+    100128: Window_0.2x4x4_proxy
+    100130: WindowGothic_0.2x2x2.5_proxy
     400000: //RootNode
     400002: LibraryCeiling
     400004: LibraryFloor
@@ -81,6 +108,33 @@ ModelImporter:
     400072: LibraryWallB1Back.002
     400074: LibraryWallB1Back.003
     400076: LibraryWindow
+    400078: Ceiling_2x2x0.15_proxy
+    400080: FloorRedCarpet_2x2x0.05_proxy
+    400082: FloorTileWood_2x2x0.05_proxy
+    400084: HallWall_0.15x1.85x1_proxy
+    400086: HallWall_0.15x1.85x2_proxy
+    400088: HallWall_0.15x2x0.5_proxy
+    400090: HallWall_0.15x2x1_proxy
+    400092: HallWall_0.15x2x2.5_proxy
+    400094: HallWall_0.15x2x2_proxy
+    400096: HallWall_2x2x1.5_proxy
+    400098: HallWall_2x2x2.5_proxy
+    400100: HallWallWhite_0.15x1.85x2.5_proxy
+    400102: HallWallWhite_0.15x2x2.5_proxy
+    400104: HallWallWhite_0.15x2x2.5_proxy.001
+    400106: HallWallWhite_0.15x2x2_proxy
+    400108: Lamp
+    400110: Lamp.001
+    400112: LibraryStairs_4x6x2.5_proxy
+    400114: LibraryWallFire_2x6x3_proxy
+    400116: LibraryWallWindow_2x4x3_proxy
+    400118: MusicRoomStairs_6x2x1.5_proxy
+    400120: MusicRoomWallWindow_2x8x5.5_proxy
+    400122: PARTS
+    400124: Sun
+    400126: Window_0.2x2x2.5_proxy
+    400128: Window_0.2x4x4_proxy
+    400130: WindowGothic_0.2x2x2.5_proxy
     2100000: Wall
     2100002: WallWhiteFull
     2100004: TilesRed
@@ -89,6 +143,9 @@ ModelImporter:
     2100010: RedCarpet
     2100012: WhiteWall
     2100014: FloorWood
+    2100016: WallWhiteWood2
+    2100018: Material
+    2100020: WallWhiteWood
     2300000: LibraryCeiling
     2300002: LibraryFloor
     2300004: LibraryFloor.001
@@ -127,6 +184,29 @@ ModelImporter:
     2300070: LibraryWallB1Back.002
     2300072: LibraryWallB1Back.003
     2300074: LibraryWindow
+    2300076: Ceiling_2x2x0.15_proxy
+    2300078: FloorRedCarpet_2x2x0.05_proxy
+    2300080: FloorTileWood_2x2x0.05_proxy
+    2300082: HallWall_0.15x1.85x1_proxy
+    2300084: HallWall_0.15x1.85x2_proxy
+    2300086: HallWall_0.15x2x0.5_proxy
+    2300088: HallWall_0.15x2x1_proxy
+    2300090: HallWall_0.15x2x2.5_proxy
+    2300092: HallWall_0.15x2x2_proxy
+    2300094: HallWall_2x2x1.5_proxy
+    2300096: HallWall_2x2x2.5_proxy
+    2300098: HallWallWhite_0.15x1.85x2.5_proxy
+    2300100: HallWallWhite_0.15x2x2.5_proxy
+    2300102: HallWallWhite_0.15x2x2.5_proxy.001
+    2300104: HallWallWhite_0.15x2x2_proxy
+    2300106: LibraryStairs_4x6x2.5_proxy
+    2300108: LibraryWallFire_2x6x3_proxy
+    2300110: LibraryWallWindow_2x4x3_proxy
+    2300112: MusicRoomStairs_6x2x1.5_proxy
+    2300114: MusicRoomWallWindow_2x8x5.5_proxy
+    2300116: Window_0.2x2x2.5_proxy
+    2300118: Window_0.2x4x4_proxy
+    2300120: WindowGothic_0.2x2x2.5_proxy
     3300000: LibraryCeiling
     3300002: LibraryFloor
     3300004: LibraryFloor.001
@@ -165,6 +245,29 @@ ModelImporter:
     3300070: LibraryWallB1Back.002
     3300072: LibraryWallB1Back.003
     3300074: LibraryWindow
+    3300076: Ceiling_2x2x0.15_proxy
+    3300078: FloorRedCarpet_2x2x0.05_proxy
+    3300080: FloorTileWood_2x2x0.05_proxy
+    3300082: HallWall_0.15x1.85x1_proxy
+    3300084: HallWall_0.15x1.85x2_proxy
+    3300086: HallWall_0.15x2x0.5_proxy
+    3300088: HallWall_0.15x2x1_proxy
+    3300090: HallWall_0.15x2x2.5_proxy
+    3300092: HallWall_0.15x2x2_proxy
+    3300094: HallWall_2x2x1.5_proxy
+    3300096: HallWall_2x2x2.5_proxy
+    3300098: HallWallWhite_0.15x1.85x2.5_proxy
+    3300100: HallWallWhite_0.15x2x2.5_proxy
+    3300102: HallWallWhite_0.15x2x2.5_proxy.001
+    3300104: HallWallWhite_0.15x2x2_proxy
+    3300106: LibraryStairs_4x6x2.5_proxy
+    3300108: LibraryWallFire_2x6x3_proxy
+    3300110: LibraryWallWindow_2x4x3_proxy
+    3300112: MusicRoomStairs_6x2x1.5_proxy
+    3300114: MusicRoomWallWindow_2x8x5.5_proxy
+    3300116: Window_0.2x2x2.5_proxy
+    3300118: Window_0.2x4x4_proxy
+    3300120: WindowGothic_0.2x2x2.5_proxy
     4300000: LibraryWallB0Left.002
     4300002: LibraryWallB0Right.006
     4300004: LibraryWallB0Right.003
@@ -194,6 +297,23 @@ ModelImporter:
     4300052: LibraryWallB0Back
     4300054: LibraryWallB0Back.001
     4300056: LibraryWallB1Back.001
+    4300058: WindowGothic_0.2x2x2.5_proxy
+    4300060: Window_0.2x2x2.5_proxy
+    4300062: LibraryWallWindow_2x4x3_proxy
+    4300064: FloorRedCarpet_2x2x0.05_proxy
+    4300066: Ceiling_2x2x0.15_proxy
+    4300068: Window_0.2x4x4_proxy
+    4300070: HallWallWhite_0.15x2x2.5_proxy.001
+    4300072: MusicRoomWallWindow_2x8x5.5_proxy
+    4300074: MusicRoomStairs_6x2x1.5_proxy
+    4300076: HallWallWhite_0.15x1.85x2.5_proxy
+    4300078: HallWallWhite_0.15x2x2_proxy
+    4300080: FloorTileWood_2x2x0.05_proxy
+    4300082: HallWall_2x2x1.5_proxy
+    4300084: HallWall_0.15x2x2_proxy
+    4300086: HallWall_0.15x1.85x2_proxy
+    4300088: HallWall_0.15x1.85x1_proxy
+    4300090: HallWall_0.15x2x1_proxy
     6400000: LibraryCeiling
     6400002: LibraryFloor
     6400004: LibraryFloor.001
@@ -232,7 +352,38 @@ ModelImporter:
     6400070: LibraryWallB1Back.002
     6400072: LibraryWallB1Back.003
     6400074: LibraryWindow
-  externalObjects: {}
+    6400076: Ceiling_2x2x0.15_proxy
+    6400078: FloorRedCarpet_2x2x0.05_proxy
+    6400080: FloorTileWood_2x2x0.05_proxy
+    6400082: HallWall_0.15x1.85x1_proxy
+    6400084: HallWall_0.15x1.85x2_proxy
+    6400086: HallWall_0.15x2x0.5_proxy
+    6400088: HallWall_0.15x2x1_proxy
+    6400090: HallWall_0.15x2x2.5_proxy
+    6400092: HallWall_0.15x2x2_proxy
+    6400094: HallWall_2x2x1.5_proxy
+    6400096: HallWall_2x2x2.5_proxy
+    6400098: HallWallWhite_0.15x1.85x2.5_proxy
+    6400100: HallWallWhite_0.15x2x2.5_proxy
+    6400102: HallWallWhite_0.15x2x2.5_proxy.001
+    6400104: HallWallWhite_0.15x2x2_proxy
+    6400106: LibraryStairs_4x6x2.5_proxy
+    6400108: LibraryWallFire_2x6x3_proxy
+    6400110: LibraryWallWindow_2x4x3_proxy
+    6400112: MusicRoomStairs_6x2x1.5_proxy
+    6400114: MusicRoomWallWindow_2x8x5.5_proxy
+    6400116: Window_0.2x2x2.5_proxy
+    6400118: Window_0.2x4x4_proxy
+    6400120: WindowGothic_0.2x2x2.5_proxy
+    10800000: Lamp
+    10800002: Lamp.001
+    10800004: Sun
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedCarpet
+    second: {fileID: 2100000, guid: cf775c2e546ebf64db9bb4f8592a4280, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
