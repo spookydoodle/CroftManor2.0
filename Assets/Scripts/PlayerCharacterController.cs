@@ -54,6 +54,8 @@ public class PlayerCharacterController : MonoBehaviour {
         float v = Input.GetAxisRaw("Vertical");
         bool j = Input.GetButtonDown("Jump");
         bool f = Input.GetButton("Fire1");
+        bool f3WentUp = Input.GetButtonUp("Fire3");
+        bool f3WentDown = Input.GetButtonDown("Fire3");
 
         // Up-Down movement
         if (j)
@@ -75,6 +77,16 @@ public class PlayerCharacterController : MonoBehaviour {
         // Shoot
         if (f) {
             this.bulletSourceController.Shoot();
+        }
+
+        // Show trajectory
+        if (f3WentDown)
+        {
+            this.bulletSourceController.ShowTrajectory();
+        }
+        else if (f3WentUp)
+        {
+            this.bulletSourceController.HideTrajectory();
         }
 
         // Set animations for movement
