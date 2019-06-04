@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 5684078743448934349, guid: f71508f3ab8011342a83c211bb4bb5a2, type: 3}
+  trajectory: {fileID: 5768800610543058735, guid: 6804011a5c8d2be4f831d31efcada3ca,
+    type: 3}

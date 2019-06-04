@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    private float speed = 10;
+    private static float speed = 10;
     private Rigidbody rb;
 
     void Start()
     {
         this.rb = GetComponent<Rigidbody>();
         this.rb.velocity = this.transform.forward * speed;
+    }
+
+    public static Vector3 InitialSpeed()
+    {
+        return new Vector3(0, 0, speed);
+    }
+
+    public static bool UsesGravity()
+    {
+        return false;
     }
 
     void OnCollisionEnter(Collision other)
