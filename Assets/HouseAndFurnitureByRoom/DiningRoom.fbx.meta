@@ -126,7 +126,12 @@ ModelImporter:
     6400030: DiningRoomWallWindow
     6400032: DiningRoomWallWindow.001
     6400034: DiningRoomWindow
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TileBlackWhite
+    second: {fileID: 2100000, guid: 91d593bb3d397fa4296fc37f27abe785, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
