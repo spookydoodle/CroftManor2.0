@@ -333,7 +333,47 @@ ModelImporter:
     10800004: Point
     10800006: Point.001
     10800008: Sun
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 227d48985edcb75438560c56906b9a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarbleBlack
+    second: {fileID: 2100000, guid: 5b153e84150724046b334559783c3052, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mosaic1_corner
+    second: {fileID: 2100000, guid: 28727ce2ac1362e4aa7d7184d1ea9404, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mosaic1_middle
+    second: {fileID: 2100000, guid: 6bd3137e27f6f8043a97961363ee0f6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mosaic1_side
+    second: {fileID: 2100000, guid: 41cbe246c7c8f6e4a8780c9432368654, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MosaicBoat
+    second: {fileID: 2100000, guid: 19c311191422f4542b0637f2ae885eb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PoolTilesBrown1
+    second: {fileID: 2100000, guid: 13c3b60a7a053224a8596fec32d6e8f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SteelDarkBrown
+    second: {fileID: 2100000, guid: dcb55ab5a1640b146b7a41215afb7c17, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

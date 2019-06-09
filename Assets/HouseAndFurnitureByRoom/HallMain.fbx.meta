@@ -120,6 +120,9 @@ ModelImporter:
     100228: Window_0.2x2x2_proxy
     100230: Window_0.2x4x4_proxy
     100232: Windows
+    100234: HallRailingPostBackRight.001
+    100236: HallRailingPostBackRight.002
+    100238: Camera
     400000: HallFloorF1Back
     400002: HallFloorF1Left
     400004: HallFloorF1Right
@@ -237,6 +240,10 @@ ModelImporter:
     400228: Window_0.2x2x2_proxy
     400230: Window_0.2x4x4_proxy
     400232: Windows
+    400234: HallRailingPostBackRight.001
+    400236: HallRailingPostBackRight.002
+    400238: Camera
+    2000000: Camera
     2100000: WindowGolden
     2100002: WallWhiteWood2
     2100004: Wall
@@ -355,6 +362,8 @@ ModelImporter:
     2300206: StairsRight_10x4x2.2_7_proxy
     2300208: Window_0.2x2x2_proxy
     2300210: Window_0.2x4x4_proxy
+    2300212: HallRailingPostBackRight.001
+    2300214: HallRailingPostBackRight.002
     3300000: HallFloorF1Back
     3300002: HallFloorF1Left
     3300004: HallFloorF1Right
@@ -461,6 +470,8 @@ ModelImporter:
     3300206: StairsRight_10x4x2.2_7_proxy
     3300208: Window_0.2x2x2_proxy
     3300210: Window_0.2x4x4_proxy
+    3300212: HallRailingPostBackRight.001
+    3300214: HallRailingPostBackRight.002
     4300000: HallWindowRight
     4300002: HallWindowEntrance
     4300004: HallRoofRight
@@ -560,6 +571,7 @@ ModelImporter:
     4300192: HallWall_0.15x1.85x1_proxy
     4300194: HallWallRooftopBack_0.15x24x2_proxy
     4300196: HallWall_0.15x2x1_proxy
+    4300198: HallRailingPostBackRight.002
     6400000: HallFloorF1Back
     6400002: HallFloorF1Left
     6400004: HallFloorF1Right
@@ -666,6 +678,8 @@ ModelImporter:
     6400206: StairsRight_10x4x2.2_7_proxy
     6400208: Window_0.2x2x2_proxy
     6400210: Window_0.2x4x4_proxy
+    6400212: HallRailingPostBackRight.001
+    6400214: HallRailingPostBackRight.002
     10800000: Lamp
     10800002: Lamp.001
     10800004: Point
@@ -706,7 +720,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WallWhite
-    second: {fileID: 2100000, guid: ce9b87a60d8e40d41a2fe4a7363c32cc, type: 2}
+    second: {fileID: 2100000, guid: c184834a407848b44b429834e0c2f4fc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

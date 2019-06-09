@@ -202,7 +202,47 @@ ModelImporter:
     6400060: BathroomWallTopTiles_2x2x1.5_proxy
     6400062: FloorMarbleBlack_2x2x0.05_proxy
     6400064: Window_0.2x2x2_proxy.001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MarbleBlack
+    second: {fileID: 2100000, guid: 5b153e84150724046b334559783c3052, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mosaic1_corner
+    second: {fileID: 2100000, guid: 28727ce2ac1362e4aa7d7184d1ea9404, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mosaic1_middle
+    second: {fileID: 2100000, guid: 6bd3137e27f6f8043a97961363ee0f6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mosaic1_side
+    second: {fileID: 2100000, guid: 41cbe246c7c8f6e4a8780c9432368654, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PoolTilesBrown1
+    second: {fileID: 2100000, guid: 13c3b60a7a053224a8596fec32d6e8f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TilesBlue
+    second: {fileID: 2100000, guid: 387e39fd13b1c1449bf0ea2383a7643e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: b4c0d9258ef5baa478eb159ad21fc37c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteTransparent
+    second: {fileID: 2100000, guid: 227d48985edcb75438560c56906b9a27, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

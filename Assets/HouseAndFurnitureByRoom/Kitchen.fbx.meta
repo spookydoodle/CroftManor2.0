@@ -156,7 +156,37 @@ ModelImporter:
     6400042: KitchenWallB1Right.002
     6400044: KitchenWallB1Right.004
     6400046: Fridge
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TileBlackWhite
+    second: {fileID: 2100000, guid: 91d593bb3d397fa4296fc37f27abe785, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TilesRed
+    second: {fileID: 2100000, guid: 2f77b5e04a1b02d4c871c8c977aab91a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhiteFull
+    second: {fileID: 2100000, guid: e0db9795c124da84e8da5688708cdd3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: b4c0d9258ef5baa478eb159ad21fc37c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteTransparent
+    second: {fileID: 2100000, guid: 227d48985edcb75438560c56906b9a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: e0db9795c124da84e8da5688708cdd3b, type: 2}
   materials:
     importMaterials: 1
     materialName: 2

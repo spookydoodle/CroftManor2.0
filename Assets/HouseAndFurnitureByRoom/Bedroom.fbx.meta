@@ -131,6 +131,7 @@ ModelImporter:
     2100018: MetalGolden
     2100020: MetalGolden.001
     2100022: StoneGrey
+    2100024: DarkWood
     2300000: BedroomFloor
     2300002: BedroomFloorStairs
     2300004: BedroomStairsEntrance
@@ -333,7 +334,72 @@ ModelImporter:
     6400106: Rail_0.2x1x1_proxy
     6400108: RailCorner_0.2x1x1_proxy
     6400110: Window_0.2x2x3_proxy
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkWood
+    second: {fileID: 2100000, guid: f01d2590351e6d94c8d30668a254aeb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FloorWood
+    second: {fileID: 2100000, guid: 16fd99d4b68adb342a42ab421bfbb1a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalGolden
+    second: {fileID: 2100000, guid: 8b30238c88a283f42bcc010c7ac44b80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MetalGolden.001
+    second: {fileID: 2100000, guid: f9efe712cee42364488d9707bc435e6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoneGrey
+    second: {fileID: 2100000, guid: 2f18bf57e6ff00b4b8388966e1fed257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TilesRed
+    second: {fileID: 2100000, guid: 2f77b5e04a1b02d4c871c8c977aab91a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 4eb98f4b1ba4c1342a34a1bd7bb6a9f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhiteFull
+    second: {fileID: 2100000, guid: e0db9795c124da84e8da5688708cdd3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhiteWood2
+    second: {fileID: 2100000, guid: 4e8406717c96f6d47ab6e3950cc72135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: b4c0d9258ef5baa478eb159ad21fc37c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteTransparent
+    second: {fileID: 2100000, guid: 227d48985edcb75438560c56906b9a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: c184834a407848b44b429834e0c2f4fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowGolden
+    second: {fileID: 2100000, guid: f360172995be0724480df72306cccb2d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

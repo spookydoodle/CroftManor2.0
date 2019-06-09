@@ -2819,7 +2819,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd4432be89613c7409ca0da419d433c1, type: 3}
       propertyPath: m_RootOrder
-      value: 69
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd4432be89613c7409ca0da419d433c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3615,7 +3615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fdee7aab57b2d06468db0b6cd5e19d07, type: 3}
       propertyPath: m_RootOrder
-      value: 72
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fdee7aab57b2d06468db0b6cd5e19d07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4043,7 +4043,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd4432be89613c7409ca0da419d433c1, type: 3}
       propertyPath: m_RootOrder
-      value: 67
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd4432be89613c7409ca0da419d433c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4898,7 +4898,7 @@ Light:
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 9bdb18c49d114cb4300035184241aa39, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -5534,7 +5534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd4432be89613c7409ca0da419d433c1, type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cd4432be89613c7409ca0da419d433c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5854,7 +5854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
       propertyPath: m_RootOrder
-      value: 70
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4b4cfa620e9cfd4386863893e760038, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5912,7 +5912,7 @@ Transform:
   - {fileID: 1071180900}
   - {fileID: 1398377312}
   m_Father: {fileID: 1636283542}
-  m_RootOrder: 73
+  m_RootOrder: 71
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1368263648
 GameObject:
@@ -6033,7 +6033,7 @@ Light:
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 54fbbf098d116effa00081aba8ad6659, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
@@ -6407,6 +6407,7 @@ GameObject:
   - component: {fileID: 1444933582}
   - component: {fileID: 1444933581}
   - component: {fileID: 1444933584}
+  - component: {fileID: 1444933585}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6493,6 +6494,14 @@ MonoBehaviour:
   target: {fileID: 240883161}
   invertYaxis: 0
   speed: 0.5
+--- !u!124 &1444933585
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444933580}
+  m_Enabled: 1
 --- !u!1001 &1451925159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6766,7 +6775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86c4406841457b042ae178d6369849fe, type: 3}
       propertyPath: m_RootOrder
-      value: 71
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 86c4406841457b042ae178d6369849fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

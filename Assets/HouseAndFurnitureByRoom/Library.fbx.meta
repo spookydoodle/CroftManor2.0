@@ -382,8 +382,43 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: FloorWood
+    second: {fileID: 2100000, guid: 16fd99d4b68adb342a42ab421bfbb1a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: RedCarpet
     second: {fileID: 2100000, guid: cf775c2e546ebf64db9bb4f8592a4280, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TilesRed
+    second: {fileID: 2100000, guid: 2f77b5e04a1b02d4c871c8c977aab91a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall
+    second: {fileID: 2100000, guid: 4eb98f4b1ba4c1342a34a1bd7bb6a9f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhite
+    second: {fileID: 2100000, guid: c184834a407848b44b429834e0c2f4fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallWhiteFull
+    second: {fileID: 2100000, guid: e0db9795c124da84e8da5688708cdd3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteWall
+    second: {fileID: 2100000, guid: c184834a407848b44b429834e0c2f4fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WindowGolden
+    second: {fileID: 2100000, guid: f360172995be0724480df72306cccb2d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
