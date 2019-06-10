@@ -66,6 +66,7 @@ ModelImporter:
     100120: PARTS
     100122: Sun
     100124: Window_0.2x4x4_proxy
+    100126: MusicRoomEntranceCeiling
     400000: //RootNode
     400002: MusicRoomFloorB0
     400004: MusicRoomStairs
@@ -129,6 +130,7 @@ ModelImporter:
     400120: PARTS
     400122: Sun
     400124: Window_0.2x4x4_proxy
+    400126: MusicRoomEntranceCeiling
     2100000: WhiteWall
     2100002: Wall
     2100004: WindowGolden
@@ -137,6 +139,7 @@ ModelImporter:
     2100010: FloorWood
     2100012: Material
     2100014: WallWhiteWood
+    2100016: WindowGolden.001
     2300000: MusicRoomFloorB0
     2300002: MusicRoomStairs
     2300004: MusicRoomWallB0Back
@@ -195,6 +198,7 @@ ModelImporter:
     2300110: MusicRoomStairs_6x2x1.5_proxy
     2300112: MusicRoomWallWindow_2x8x5.5_proxy
     2300114: Window_0.2x4x4_proxy
+    2300116: MusicRoomEntranceCeiling
     3300000: MusicRoomFloorB0
     3300002: MusicRoomStairs
     3300004: MusicRoomWallB0Back
@@ -253,6 +257,7 @@ ModelImporter:
     3300110: MusicRoomStairs_6x2x1.5_proxy
     3300112: MusicRoomWallWindow_2x8x5.5_proxy
     3300114: Window_0.2x4x4_proxy
+    3300116: MusicRoomEntranceCeiling
     4300000: MusicRoomWallB0Back.010
     4300002: MusicRoomWallB0Back.009
     4300004: MusicRoomWallB0Back.008
@@ -300,6 +305,7 @@ ModelImporter:
     4300088: HallWall_0.15x1.85x2_proxy
     4300090: HallWall_0.15x1.85x1_proxy
     4300092: HallWall_0.15x2x1_proxy
+    4300094: MusicRoomEntranceCeiling
     6400000: MusicRoomFloorB0
     6400002: MusicRoomStairs
     6400004: MusicRoomWallB0Back
@@ -358,6 +364,7 @@ ModelImporter:
     6400110: MusicRoomStairs_6x2x1.5_proxy
     6400112: MusicRoomWallWindow_2x8x5.5_proxy
     6400114: Window_0.2x4x4_proxy
+    6400116: MusicRoomEntranceCeiling
     10800000: Lamp
     10800002: Lamp.001
     10800004: Sun
@@ -391,7 +398,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WindowGolden
-    second: {fileID: 2100000, guid: f360172995be0724480df72306cccb2d, type: 2}
+    second: {fileID: 2100000, guid: 0241689ba44f2544f8d9c8257c60561f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

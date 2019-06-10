@@ -740,7 +740,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WindowGolden
-    second: {fileID: 2100000, guid: f360172995be0724480df72306cccb2d, type: 2}
+    second: {fileID: 2100000, guid: 0241689ba44f2544f8d9c8257c60561f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
