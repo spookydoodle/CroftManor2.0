@@ -22,6 +22,7 @@ public class PlayerCharacterController : MonoBehaviour {
     CharacterController _controller;
     public Animator anim;
     private Camera cameraObject;
+    private ButlerPovController pov;
     public BulletSourceController bulletSourceController;
 
     // Use this for initialization
@@ -30,6 +31,7 @@ public class PlayerCharacterController : MonoBehaviour {
         _controller = gameObject.GetComponent<CharacterController>();
         anim = gameObject.GetComponent<Animator>();
         cameraObject = Camera.main;
+        pov = gameObject.GetComponentInChildren<ButlerPovController>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -89,6 +91,8 @@ public class PlayerCharacterController : MonoBehaviour {
             this.bulletSourceController.HideTrajectory();
         }
 
+        SetPovState();
+
         // Set animations for movement
         Animating(v, h);
     }
@@ -108,7 +112,11 @@ public class PlayerCharacterController : MonoBehaviour {
             Vector3 cameraRotationOffset = new Vector3(0, cameraObject.transform.rotation.eulerAngles.y, 0);
             rotation += cameraRotationOffset;
         }
+    }
 
+    void SetPovState()
+    {
+        pov.isMoving = IsMoving();
     }
 
     void HandleRotation(float frontBack, float leftRight)
