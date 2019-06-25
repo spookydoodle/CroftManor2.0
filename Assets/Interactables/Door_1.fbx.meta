@@ -12,7 +12,12 @@ ModelImporter:
     7400000: Door_0.1x2x2|Door1_1_Open
     7400002: Door_0.1x2x2|Door1_2_Close
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door1
+    second: {fileID: 2100000, guid: 5151998a8286837418d7fc04a78d4a5e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

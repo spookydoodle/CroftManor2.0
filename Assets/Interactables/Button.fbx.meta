@@ -18,7 +18,17 @@ ModelImporter:
     7400000: ButtonPress
     7400002: ButtonRelease
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey
+    second: {fileID: 2100000, guid: df8185e3e253a1c4181a75a855437fc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: 62b2cdd8e96a9534da55f191dcca0be0, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -22,6 +22,7 @@ public class PlayerCharacterController : MonoBehaviour {
     CharacterController _controller;
     public Animator anim;
     private Camera cameraObject;
+    private ButlerPovController pov;
     public BulletSourceController bulletSourceController;
 
     // Use this for initialization
@@ -30,6 +31,7 @@ public class PlayerCharacterController : MonoBehaviour {
         _controller = gameObject.GetComponent<CharacterController>();
         anim = gameObject.GetComponent<Animator>();
         cameraObject = Camera.main;
+        pov = gameObject.GetComponentInChildren<ButlerPovController>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -66,7 +68,7 @@ public class PlayerCharacterController : MonoBehaviour {
         Fall();
         
         // Left-Right movement
-        HandleRotation(v, h, cameraObject, _controller);
+        HandleRotation(v, h);
 
         // Front movement
         MoveForward(v, h);
@@ -89,6 +91,8 @@ public class PlayerCharacterController : MonoBehaviour {
             this.bulletSourceController.HideTrajectory();
         }
 
+        SetPovState();
+
         // Set animations for movement
         Animating(v, h);
     }
@@ -100,23 +104,36 @@ public class PlayerCharacterController : MonoBehaviour {
         //float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
         float magnitude = Mathf.Max(Mathf.Abs(frontBack), Mathf.Abs(leftRight));
         speed.z = moveSpeed * magnitude;
+
+        // If the character moves, it moves relative to the camera's POV
+        if (IsMoving())
+        {
+            // Only take camera's Y rotation into account
+            Vector3 cameraRotationOffset = new Vector3(0, cameraObject.transform.rotation.eulerAngles.y, 0);
+            rotation += cameraRotationOffset;
+        }
     }
 
-    void HandleRotation(float frontBack, float leftRight, Camera camera, CharacterController butler)
+    void SetPovState()
     {
-        // Rotation is based on the ratio of frontBack and leftRight inputs
-        // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
-        float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
-        bool movingBackwards = frontBack < 0;
-        rotation.y = angle;
-        //if (!movingBackwards)
-        //{
-        //    rotation.y = angle;
-        //}
-        //else
-        //{
-        //    rotation.y = -angle;
-        //}
+        pov.isMoving = IsMoving();
+    }
+
+    void HandleRotation(float frontBack, float leftRight)
+    {
+        // If the player is not moving, leave the rotation unchanged
+        bool moving = frontBack != 0 || leftRight != 0;
+        if (!moving)
+        {
+            return;
+        }
+        else
+        {
+            // Rotation is based on the ratio of frontBack and leftRight inputs
+            // If frontBack is 1 and leftRight is 1, the controller will rotate by 45 degrees to the left.
+            float angle = Mathf.Atan2(leftRight, frontBack) * Mathf.Rad2Deg;
+            rotation.y = angle;
+        }
     }
 
     void Jump()
@@ -140,11 +157,7 @@ public class PlayerCharacterController : MonoBehaviour {
 
     void Move()
     {
-        // Only take camera's Y rotation into account
-        Vector3 cameraRotationOffset = new Vector3(0, cameraObject.transform.rotation.eulerAngles.y, 0);
-        transform.rotation = Quaternion.Euler(rotation + cameraRotationOffset);
-
-        // Apply movement vectors
+        transform.rotation = Quaternion.Euler(rotation);
         _controller.Move(transform.TransformDirection(speed * Time.deltaTime));
     }
 

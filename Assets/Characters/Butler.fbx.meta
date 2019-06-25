@@ -107,7 +107,52 @@ ModelImporter:
     10800002: Lamp.001
     13700000: Body
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CeramicBlue
+    second: {fileID: 2100000, guid: be43d7b72dc38ba4889034d02a0c0ba6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeBallRed
+    second: {fileID: 2100000, guid: 59fe85ea82e7195448d6f2a8283d49ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyebBallBlue
+    second: {fileID: 2100000, guid: 104cc21a99a536f45bd492339c5722a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FurPurple
+    second: {fileID: 2100000, guid: 59475d88d53f98e449cbe7d9b848e1dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HairBrown
+    second: {fileID: 2100000, guid: 2096161c38a1c3c489411c441bae1bfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JeansBlack
+    second: {fileID: 2100000, guid: e960f87a4bc43f14e972f0e8bb75b372, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LeatherBlack
+    second: {fileID: 2100000, guid: 4a1d55bc08bde134cb95d8ec2a28d0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RubberWhite
+    second: {fileID: 2100000, guid: 957212b2fc5a9014e9ae2ee7a14d2944, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel
+    second: {fileID: 2100000, guid: 379d6fc6e9f841c40801c6b2dd92366c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
