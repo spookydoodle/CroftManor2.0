@@ -8,11 +8,11 @@ public class ArmController : MonoBehaviour {
 
     // These values will be added to the externally provided transform params
     private float baseRadius = 5.0f;
-    private float baseXRotation = 30f;
+    private float baseXRotation = 0f;
     private float baseYRotation = 0f;
 
     // Limits
-    private float xRotationLowerBound = 10f;
+    private float xRotationLowerBound = 0f;
     private float xRotationUpperBound = 90f;
 
     void Start()

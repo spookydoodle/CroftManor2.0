@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorControl:
-        m_Texture: {fileID: 2800000, guid: 8403d3349d112ba4d000be1be39e7c39, type: 3}
+        m_Texture: {fileID: 2800000, guid: 047330f39d11745ad0004adb8d76c639, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ColorControlCube:
@@ -72,13 +72,13 @@ Material:
     - _ReflDistort: 0.44
     - _RefrDistort: 0.4
     - _Shininess: 1
-    - _WaveScale: 0.0227
+    - _WaveScale: 0.02
     - _bScale: 0.07
     - _bTwirl: 0.05
     - _distort: 0.1
     m_Colors:
     - BumpParm: {r: 1, g: 1, b: 1, a: 1}
-    - WaveSpeed: {r: 9, g: 4.5, b: -8, a: -3.5}
+    - WaveSpeed: {r: 2, g: 6, b: -5, a: 0}
     - _AnimationDirection: {r: 1, g: 1, b: 1, a: 1}
     - _AnimationTiling: {r: 2.2, g: 2.2, b: -1.1, a: -1.1}
     - _BaseColor: {r: 0.53999996, g: 0.95, b: 0.98999995, a: 0.5}
@@ -109,7 +109,7 @@ Material:
     - _SpecularColor: {r: 0.72, g: 0.72, b: 0.72, a: 1}
     - _WaveSpeed: {r: 1, g: -1, b: -1, a: 1}
     - _WorldLightDir: {r: 0, g: 0.1, b: -0.5, a: 0}
-    - _horizonColor: {r: 0.1957547, g: 0.39444557, b: 0.5, a: 0}
+    - _horizonColor: {r: 0.6765753, g: 0.77168196, b: 0.7924528, a: 0.09803922}
     - horizonColor: {r: 0.615, g: 0.796, b: 0.876, a: 1}
     - uvParams: {r: 10, g: 0.02, b: 0.03, a: 0}
     - waveDirX: {r: -2.5, g: 0, b: 7, a: 8}
