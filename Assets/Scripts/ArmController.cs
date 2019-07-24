@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ArmController : MonoBehaviour {
+    public float optimalRadius = baseRadius;
+
     private Transform rotor;
     private Transform extender;
 
     // These values will be added to the externally provided transform params
-    private float baseRadius = 5.0f;
-    private float baseXRotation = 0f;
-    private float baseYRotation = 0f;
+    private static float baseRadius = 5.0f;
+    private static float baseXRotation = 0f;
+    private static float baseYRotation = 0f;
 
     // Limits
     private float xRotationLowerBound = 0f;
@@ -28,10 +30,17 @@ public class ArmController : MonoBehaviour {
         SetRotation(baseXRotation, baseYRotation);
     }
 
-    private void SetRadius(float radius)
+    public void SetRadius(float radius)
     {
+        // handle invalid Input
+        radius = Mathf.Max(radius, 0.1f);
         Vector3 position = new Vector3(0, 0, -radius);
         extender.localPosition = position;
+    }
+
+    public bool IsRadiusOptimal()
+    {
+        return extender.localPosition.z == optimalRadius;
     }
 
     private void SetRotation(float xRotation, float yRotation)

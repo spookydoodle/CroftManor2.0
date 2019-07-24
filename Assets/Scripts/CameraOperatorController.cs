@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CameraOperatorController : MonoBehaviour {
@@ -36,6 +37,13 @@ public class CameraOperatorController : MonoBehaviour {
         {
             follow.SetFollowRotation(false);
         }
+
+        // FIXME: this script should have full control over movement -> use Follow in manual mode
+        float obstacleDistance = ObstacleDistance();
+        if (obstacleDistance != -1f)
+        {
+            arm.SetRadius(obstacleDistance - 0.1f);  // Set the camera radius a little bit in front of the obstacle
+        }
     }
 
     void HandleRotation(float rotationX, float rotationY)
@@ -71,5 +79,32 @@ public class CameraOperatorController : MonoBehaviour {
             setInvYax = -1;
         else
             setInvYax = 1;
+    }
+
+    // Detects objects between target and the camera
+    RaycastHit[] DetectCollisions()
+    {
+        Vector3 targetPosition = follow.target.transform.position;
+        Vector3 cameraPosition = camera.transform.position;
+        return Physics.RaycastAll(targetPosition, cameraPosition - targetPosition, arm.optimalRadius);
+    }
+
+    // Returns distance to the nearest object considered an obstacle
+    // Returns -1 if no obstacle found
+    float ObstacleDistance()
+    {
+        var collisions = DetectCollisions();
+        float[] obstacles = (
+          from collision in collisions
+          where IsObstacle(collision.collider.gameObject)
+          select collision.distance
+        ).ToArray();
+
+        return obstacles.Any() ? obstacles.Min() : -1f;
+    }
+
+    bool IsObstacle(GameObject gameObject)
+    {
+        return gameObject.tag != "Player";
     }
 }
