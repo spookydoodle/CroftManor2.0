@@ -229,4 +229,5 @@ MonoBehaviour:
   enableSRPBatcher: 1
   shaderVariantLogLevel: 0
   diffusionProfileSettings: {fileID: 0}
-  diffusionProfileSettingsList: []
+  diffusionProfileSettingsList:
+  - {fileID: 11400000, guid: 7b4f2ccb51411d9418a14e61c86ee998, type: 2}
