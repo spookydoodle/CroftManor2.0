@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class BulletSourceController : MonoBehaviour
 {
-    public BulletController bullet;
+    // Available kinds of Bullet objects.
+    public List<BulletController> bullets;
     public GameObject trajectory;
     
+    private int currentBulletIndex = 0;
     private float timeBetweenShots = 0.25f;
     private float lastShotTime = 0f;
     private GameObject trajectoryInstance = null;  // FIXME: specific type
@@ -15,7 +17,7 @@ public class BulletSourceController : MonoBehaviour
     {
         if (this.CanFire())
         {
-            Instantiate(this.bullet, this.transform.position, this.transform.rotation);
+            Instantiate(this.GetCurrentBullet(), this.transform.position, this.transform.rotation);
             this.lastShotTime = Time.time;
         }
     }
@@ -24,10 +26,11 @@ public class BulletSourceController : MonoBehaviour
     {
         if (!this.trajectoryInstance)
         {
+            var currentBullet = GetCurrentBullet();
             this.trajectoryInstance = Instantiate(this.trajectory, this.transform);
             TrajectoryController trajectoryController = this.trajectoryInstance.GetComponent<TrajectoryController>();
-            trajectoryController.SetInitialSpeed(BulletController.InitialSpeed());
-            trajectoryController.SetWithGravity(BulletController.UsesGravity());
+            trajectoryController.SetInitialSpeed(currentBullet.InitialSpeed());
+            trajectoryController.SetWithGravity(currentBullet.UsesGravity());
         }
     }
 
@@ -38,6 +41,16 @@ public class BulletSourceController : MonoBehaviour
             Destroy(this.trajectoryInstance.gameObject);
             this.trajectoryInstance = null;
         }
+    }
+
+    public void NextBulletKind()
+    {
+        this.currentBulletIndex = (this.currentBulletIndex + 1) % this.bullets.Count;
+    }
+
+    BulletController GetCurrentBullet()
+    {
+        return this.bullets[this.currentBulletIndex];
     }
     
     bool CanFire()

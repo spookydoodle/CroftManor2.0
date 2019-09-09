@@ -11,14 +11,15 @@ public class BulletController : MonoBehaviour
     {
         this.rb = GetComponent<Rigidbody>();
         this.rb.velocity = this.transform.forward * speed;
+        this.rb.useGravity = this.UsesGravity();
     }
 
-    public static Vector3 InitialSpeed()
+    public Vector3 InitialSpeed()
     {
         return new Vector3(0, 0, speed);
     }
 
-    public static bool UsesGravity()
+    public bool UsesGravity()
     {
         return false;
     }
