@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletSourceController : MonoBehaviour
 {
     // Available kinds of Bullet objects.
-    public List<BulletController> bullets;
+    public List<BaseProjectileController> bullets;
     public GameObject trajectory;
     
     private int currentBulletIndex = 0;
@@ -48,7 +48,7 @@ public class BulletSourceController : MonoBehaviour
         this.currentBulletIndex = (this.currentBulletIndex + 1) % this.bullets.Count;
     }
 
-    BulletController GetCurrentBullet()
+    BaseProjectileController GetCurrentBullet()
     {
         return this.bullets[this.currentBulletIndex];
     }
