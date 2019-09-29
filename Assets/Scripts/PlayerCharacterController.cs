@@ -58,6 +58,7 @@ public class PlayerCharacterController : MonoBehaviour {
         bool f = Input.GetButton("Fire1");
         bool f3WentUp = Input.GetButtonUp("Fire3");
         bool f3WentDown = Input.GetButtonDown("Fire3");
+        bool nextBullet = Input.GetButtonDown("NextBullet");
 
         // Up-Down movement
         if (j)
@@ -79,6 +80,11 @@ public class PlayerCharacterController : MonoBehaviour {
         // Shoot
         if (f) {
             this.bulletSourceController.Shoot();
+        }
+
+        // Switch to the next kinda bullet
+        if (nextBullet) {
+            this.bulletSourceController.NextBulletKind();
         }
 
         // Show trajectory
