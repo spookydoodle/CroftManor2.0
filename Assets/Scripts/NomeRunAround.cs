@@ -25,6 +25,7 @@ public class NomeRunAround : MonoBehaviour
     {
         Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
         agent.SetDestination(newPos);
+ 
     }
 
 
