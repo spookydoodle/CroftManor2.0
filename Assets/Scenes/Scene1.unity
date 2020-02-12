@@ -262,7 +262,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &37381468
 GameObject:
@@ -583,7 +583,7 @@ Transform:
   m_Children:
   - {fileID: 671112880}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &47467302
 MonoBehaviour:
@@ -2544,6 +2544,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &224779358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 772c74e09914f0041a944968fe855871,
+    type: 3}
+  m_PrefabInstance: {fileID: 1081779876}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &224779359
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224779358}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6fecaa478c9e4341857c60d632afa0d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &228083608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: fa6fb0a3222fd9e4d93e33ffd45438c3,
@@ -3895,6 +3920,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43389805}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 240883161}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8170719232707327725, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.size
@@ -3914,14 +3947,6 @@ PrefabInstance:
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.data[1].value
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 240883161}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2589617873314488284, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
@@ -4185,7 +4210,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &498619635 stripped
 MonoBehaviour:
@@ -5306,7 +5331,7 @@ Transform:
   m_Children:
   - {fileID: 1447898635}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762503178
 GameObject:
@@ -5741,7 +5766,7 @@ Transform:
   - {fileID: 1808791671}
   - {fileID: 980525527}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &840767031
 GameObject:
@@ -7700,7 +7725,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1053786204 stripped
 GameObject:
@@ -7779,7 +7804,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1063811669 stripped
 GameObject:
@@ -7807,6 +7832,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43389805}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 240883161}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8170719232707327725, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.size
@@ -7836,14 +7869,6 @@ PrefabInstance:
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.data[0].outSlope
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 240883161}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2589617873314488284, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
@@ -8094,6 +8119,75 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &1081779876
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_Name
+      value: Zombie1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.068117
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0000008046627
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.301936
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 772c74e09914f0041a944968fe855871,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 772c74e09914f0041a944968fe855871, type: 3}
 --- !u!1 &1103442403 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 036217b135b71d5459c8bc6f9ccabc66,
@@ -8629,6 +8723,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43389805}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 240883161}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8170719232707327725, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.size
@@ -8648,14 +8750,6 @@ PrefabInstance:
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.data[1].value
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 240883161}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2589617873314488284, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
@@ -8993,7 +9087,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231723402 stripped
 GameObject:
@@ -10546,7 +10640,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447898634
 GameObject:
@@ -11345,7 +11439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591082280 stripped
 GameObject:
@@ -12908,6 +13002,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43389805}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 240883161}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8170719232707327725, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.size
@@ -12927,14 +13029,6 @@ PrefabInstance:
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.data[1].value
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 240883161}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2589617873314488284, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
@@ -14584,7 +14678,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1982243950 stripped
 GameObject:
@@ -14612,6 +14706,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43389805}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 240883161}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8170719232707327725, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.size
@@ -14631,14 +14733,6 @@ PrefabInstance:
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.data[1].value
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 240883161}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2589617873314488284, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
@@ -15063,7 +15157,7 @@ Transform:
   - {fileID: 947007935}
   - {fileID: 2069812284}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2041524019 stripped
 GameObject:
@@ -15611,7 +15705,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2145950520
 PrefabInstance:
@@ -15862,6 +15956,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 43389805}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 240883161}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8170719232707327725, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
       propertyPath: JumpCurve.m_Curve.Array.size
@@ -15900,14 +16002,6 @@ PrefabInstance:
     - target: {fileID: -8170719232707327725, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
         type: 3}
       propertyPath: HasPath
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 240883161}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2589617873314488284, guid: a2152b4c7c32ff24e9ba68e2a9e6a036,
